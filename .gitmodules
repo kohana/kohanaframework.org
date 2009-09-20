@@ -1,0 +1,9 @@
+[submodule "system"]
+	path = system
+	url = git://github.com/kohana/core.git
+[submodule "modules/database"]
+	path = modules/database
+	url = git://github.com/kohana/database.git
+[submodule "modules/sprig"]
+	path = modules/sprig
+	url = git://github.com/shadowhand/sprig.git
