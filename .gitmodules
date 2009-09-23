@@ -7,3 +7,6 @@
 [submodule "modules/sprig"]
 	path = modules/sprig
 	url = git://github.com/shadowhand/sprig.git
+[submodule "modules/userguide"]
+	path = modules/userguide
+	url = git://github.com/kohana/userguide.git

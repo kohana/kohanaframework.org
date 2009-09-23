@@ -63,10 +63,16 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('default', '(<controller>((/<id>)/<action>))')
+Route::set('docs/comments', 'guide/comments(/<action>(/<id>))', array('id' => '\d+'))
 	->defaults(array(
-		'controller' => 'welcome',
-		'action'     => 'index',
+		'controller' => 'guide_comment',
+		'action'     => 'list',
+	));
+
+Route::set('page', '((<lang>/)<page>)', array('lang' => '[a-z]{2}', 'page' => '.+'))
+	->defaults(array(
+		'controller' => 'page',
+		'action'     => 'load',
 	));
 
 /**
