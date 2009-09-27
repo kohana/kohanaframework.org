@@ -51,6 +51,15 @@ Kohana::$log->attach(new Kohana_Log_File(APPPATH.'logs'));
 Kohana::$config->attach(new Kohana_Config_File);
 
 /**
+ * Enable the document comments. This _must_ be set before the userguide module is enabled.
+ */
+Route::set('docs/comments', 'guide/comments/<page>(/<action>(/<id>))', array('page' => '[^/]+', 'id' => '\d+'))
+	->defaults(array(
+		'controller' => 'guide_comment',
+		'action'     => 'list',
+	));
+
+/**
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
@@ -63,12 +72,6 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('docs/comments', 'guide/comments(/<action>(/<id>))', array('id' => '\d+'))
-	->defaults(array(
-		'controller' => 'guide_comment',
-		'action'     => 'list',
-	));
-
 Route::set('page', '((<lang>/)<page>)', array('lang' => '[a-z]{2}', 'page' => '.+'))
 	->defaults(array(
 		'controller' => 'page',

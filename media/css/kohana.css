@@ -1,0 +1,19 @@
+html { background: #00262f url(../img/html.png) 0 0 repeat-x; }
+body { margin: 0;  }
+
+
+#wrapper { background: #f1f8db /*url(../img/body.png) 0 center no-repeat*/; }
+
+#header { padding: 58px 20px; background: #77c244 url(../img/header.png) center top repeat-x; }
+
+#logo { display: block; float: left; }
+
+#menu { float: right; margin-top: 10px; background: transparent url(../img/menu.png) right center no-repeat;; }
+#menu ul { float: left; margin: 0; padding: 0 0.5em 0 0; background: transparent url(../img/menu_endcap.png) left center no-repeat; }
+	#menu li { display: block; float: left; margin: 0; padding: 0; border-right: solid 1px #10382f; border-left: solid 1px #134237; }
+	#menu li.first { padding-left: 0.5em; border-left: 0; }
+	#menu li.last { border-right: 0; }
+		#menu li a { display: block; height: 32px; line-height: 32px; vertical-align: middle; padding: 0 0.5em; letter-spacing: 0.13em; text-decoration: none; font-weight: bold; color: #efefef; text-shadow: #113c32 0.1em 0.1em 1px; }
+		#menu li a:hover { color: #fff; text-shadow: #111 0.1em 0.1em 1px; }
+
+#footer { clear: both; background: #00262f; color: #809397; }
