@@ -14,28 +14,31 @@
 </head>
 <body>
 
-<div id="wrapper">
-	<div id="header">
-		<div class="container">
-			<?php echo HTML::anchor('', HTML::image('media/img/kohana.png', array('alt' => 'Kohana')), array('id' => 'logo')) ?>
-			<div id="menu">
-				<ul>
-					<li class="home first"><?php echo HTML::anchor('', 'Home') ?></li>
-					<li class="download"><?php echo HTML::anchor('download', 'Download') ?></li>
-					<li class="documentation"><?php echo HTML::anchor('documentation', 'Documentation') ?></li>
-					<li class="community"><?php echo HTML::anchor('community', 'Community') ?></li>
-					<li class="development last"><?php echo HTML::anchor('development', 'Development') ?></li>
-				</ul>
-			</div>
+<div id="header">
+	<div class="container">
+		<?php echo HTML::anchor('', HTML::image('media/img/kohana.png', array('alt' => 'Kohana')), array('id' => 'logo')) ?>
+		<div id="menu">
+			<ul>
+				<li class="home first"><?php echo HTML::anchor('', 'Home') ?></li>
+				<li class="download"><?php echo HTML::anchor('download', 'Download') ?></li>
+				<li class="documentation"><?php echo HTML::anchor('documentation', 'Documentation') ?></li>
+				<li class="community"><?php echo HTML::anchor('community', 'Community') ?></li>
+				<li class="development last"><?php echo HTML::anchor('development', 'Development') ?></li>
+			</ul>
 		</div>
 	</div>
-	<div id="content" class="container">
-		<?php echo $content ?> 
+</div>
+
+<div id="content">
+	<div class="wrapper">
+		<div class="container">
+			<?php echo $content ?> 
+		</div>
 	</div>
 </div>
 
 <div id="footer" class="container">
-	<div class="copyright span-8">
+	<div class="copyright span-6 prefix-1">
 		<p class="caps top"><?php echo HTML::anchor('', HTML::image('media/img/kohana_dark.png', array('alt' => 'Kohana'))) ?><br/>
 			Copyright &copy;2007-2009<br/>
 			All rights reserved<br/>
@@ -52,7 +55,7 @@
 			)) ?>
 		</ol>
 	</div>
-	<div class="changes feed span-8 last">
+	<div class="changes feed span-8 suffix-1 last">
 		<h6 class="caps top">Latest Development</h6>
 		<ol>
 			<?php echo View::factory('template/feed', array(

@@ -5,19 +5,18 @@ a img { border: 0; }
 
 .caps { text-transform: uppercase; font-size: 0.8em; font-weight: normal; }
 
-#wrapper { background: #f1f8db; }
+#header { padding: 58px 0 10px; background: #77c244 url(../img/header.png) center top repeat-x; }
+	#logo { display: block; float: left; }
+	#menu { float: right; margin-top: 12px; background: transparent url(../img/menu.png) right center no-repeat;; }
+	#menu ul { float: left; margin: 0; padding: 0 0.5em 0 0; background: transparent url(../img/menu_endcap.png) left center no-repeat; }
+		#menu li { display: block; float: left; margin: 0; padding: 0; border-right: solid 1px #10382f; border-left: solid 1px #134237; }
+		#menu li.first { padding-left: 0.5em; border-left: 0; }
+		#menu li.last { border-right: 0; }
+			#menu li a { display: block; height: 32px; line-height: 32px; vertical-align: middle; padding: 0 0.5em; letter-spacing: 0.13em; text-decoration: none; /*font-weight: bold;*/ color: #efefef; text-shadow: #113c32 0.1em 0.1em 1px; }
+			#menu li a:hover { color: #fff; text-shadow: #111 0.1em 0.1em 1px; }
 
-#header { padding: 58px 20px; background: #77c244 url(../img/header.png) center top repeat-x; }
-
-#logo { display: block; float: left; }
-
-#menu { float: right; margin-top: 10px; background: transparent url(../img/menu.png) right center no-repeat;; }
-#menu ul { float: left; margin: 0; padding: 0 0.5em 0 0; background: transparent url(../img/menu_endcap.png) left center no-repeat; }
-	#menu li { display: block; float: left; margin: 0; padding: 0; border-right: solid 1px #10382f; border-left: solid 1px #134237; }
-	#menu li.first { padding-left: 0.5em; border-left: 0; }
-	#menu li.last { border-right: 0; }
-		#menu li a { display: block; height: 32px; line-height: 32px; vertical-align: middle; padding: 0 0.5em; letter-spacing: 0.13em; text-decoration: none; /*font-weight: bold;*/ color: #efefef; text-shadow: #113c32 0.1em 0.1em 1px; }
-		#menu li a:hover { color: #fff; text-shadow: #111 0.1em 0.1em 1px; }
+#content { clear: both; background: #f1f8db url(../img/content.png) center top repeat-x; }
+	#content .wrapper { padding-top: 1em; background: transparent url(../img/wrapper.png) center top no-repeat; }
 
 #footer { clear: both; padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; }
 	#footer a { color: #809397; }
