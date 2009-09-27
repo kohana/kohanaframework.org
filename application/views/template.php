@@ -30,22 +30,7 @@
 		</div>
 	</div>
 	<div id="content" class="container">
-		<div class="about span-12">
-			Blurb
-		</div>
-		<div class="versions span-12 last">
-			<div class="v3">
-				3.0
-			</div>
-			<div class="v2">
-				2.3
-			</div>
-		</div>
-	</div>
-	<div id="showcase" class="container">
-		<div class="span-24">
-			Showcase
-		</div>
+		<?php echo $content ?> 
 	</div>
 </div>
 
