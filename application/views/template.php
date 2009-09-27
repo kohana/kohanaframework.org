@@ -51,29 +51,30 @@
 
 <div id="footer" class="container">
 	<div class="copyright span-8">
-		<?php echo HTML::anchor('', HTML::image('media/img/kohana_dark.png', array('alt' => 'Kohana'))) ?><br/>
+		<p class="caps top"><?php echo HTML::anchor('', HTML::image('media/img/kohana_dark.png', array('alt' => 'Kohana'))) ?><br/>
 			Copyright &copy;2007-2009<br/>
 			All rights reserved<br/>
 			The awesome <?php echo HTML::anchor('team', 'Kohana Team') ?>
+		</p>
 	</div>
 	<div class="discussions feed span-8">
-		<h6>Latest Discussions</h6>
+		<h6 class="caps top">Latest Discussions</h6>
 		<ol>
 			<?php echo View::factory('template/feed', array(
 				'feed'  => 'http://forum.kohanaphp.com/search.php?PostBackAction=Search&Advanced=1&Type=Comments&Feed=RSS2',
 				'limit' => 5,
-				'more'  => 'More discussions &raquo;',
+				'more'  => 'More discussions',
 			)) ?>
 		</ol>
 	</div>
 	<div class="changes feed span-8 last">
-		<h6>Latest Development</h6>
+		<h6 class="caps top">Latest Development</h6>
 		<ol>
 			<?php echo View::factory('template/feed', array(
 				'feed'  => 'http://dev.kohanaphp.com/activity.atom?key=yUHDvnjJryqHZmgiSNAaReHU6V5JHXBNnew8gRLu&show_changesets=1',
 				'limit' => 5,
 				'link'  => 'id',
-				'more'  => 'More changes &raquo;',
+				'more'  => 'More development',
 			)) ?>
 		</ol>
 	</div>

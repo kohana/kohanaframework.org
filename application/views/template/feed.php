@@ -14,5 +14,5 @@ isset($title) or $title = 'title';
 <?php foreach ($items as $item): ?>
 <li><?php echo HTML::anchor($item[$link], $item[$title]) ?></li>
 <?php endforeach ?>
-<li><?php echo HTML::anchor($feed, $more) ?>
+<li>&raquo; <?php echo HTML::anchor($feed, $more) ?>
 <?php Fragment::save(); endif ?>

@@ -3,6 +3,8 @@ body { margin: 0; }
 ol ol, ol ul, ul ul, ul ol { margin-bottom: 0; }
 a img { border: 0; }
 
+.caps { text-transform: uppercase; font-size: 0.8em; font-weight: normal; }
+
 #wrapper { background: #f1f8db; }
 
 #header { padding: 58px 20px; background: #77c244 url(../img/header.png) center top repeat-x; }
@@ -17,10 +19,10 @@ a img { border: 0; }
 		#menu li a { display: block; height: 32px; line-height: 32px; vertical-align: middle; padding: 0 0.5em; letter-spacing: 0.13em; text-decoration: none; /*font-weight: bold;*/ color: #efefef; text-shadow: #113c32 0.1em 0.1em 1px; }
 		#menu li a:hover { color: #fff; text-shadow: #111 0.1em 0.1em 1px; }
 
-#footer { clear: both; padding: 1em 0; background: #00262f; color: #eee; }
+#footer { clear: both; padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; }
 	#footer a { color: #809397; }
-	#footer .copyright { text-transform: uppercase; font-size: 0.8em; color: #405c63; }
+	#footer .copyright { color: #405c63; }
 		#footer .copyright a { color: #405c63; text-decoration: underline; }
-	#footer .feed h6 { margin-top: 0; margin-left: -14px; padding-left: 14px; text-transform: uppercase; font-size: 0.8em; font-weight: normal; background: transparent url(../img/feed.png) left center no-repeat; }
+	#footer .feed h6 { margin-left: -14px; padding-left: 14px; letter-spacing: 0.11em; background: transparent url(../img/feed.png) left center no-repeat; }
 	#footer .feed ol { margin: 0; padding: 0; list-style: none; }
 		#footer .feed li { margin: 0; padding: 0; }
