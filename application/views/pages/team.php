@@ -13,7 +13,7 @@
 
 		<dt>Developers</dt>
 		<dd>Ben Rogers <span class="fancy">aka</span> Nodren</dd>
-		<dd>Chris Bandy <span class="fancy">aka</span> cbandy</dd>
+		<dd>Chris Bandy <span class="fancy">aka</span> banditron</dd>
 		<dd>Isaiah DeRose-Wilson <span class="fancy">aka</span> isaiahdw</dd>
 		<dd>John Heathco <span class="fancy">aka</span> jheathco</dd>
 		<dd>Kiall Mac Innes <span class="fancy">aka</span> Kiall</dd>
