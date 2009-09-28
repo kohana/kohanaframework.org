@@ -59,7 +59,7 @@
 			<h6 class="caps top">Latest Development</h6>
 			<ol>
 				<?php echo View::factory('template/feed', array(
-					'feed'  => 'http://dev.kohanaphp.com/activity.atom?key=yUHDvnjJryqHZmgiSNAaReHU6V5JHXBNnew8gRLu&show_changesets=1',
+					'feed'  => 'http://dev.kohanaphp.com/activity.atom?show_changesets=1',
 					'limit' => 5,
 					'link'  => 'id',
 					'more'  => 'More development',
