@@ -13,7 +13,6 @@
 
 	<h2>Can you host my project?</h2>
 
-	<p>Yes, we do offer hosting for addons and projects built using Kohana. Please post in the <?php echo HTML::anchor('http://forum.kohanaphp.com/comments.php?DiscussionID=2018', 'projects thread') ?> to have an admin create a project for you. Hosted projects get issue tracking, repository viewing, wiki, and news posting capabilities.</p>
-	<p><small>Please note that we <strong>do not</strong> provide source control repositories for projects! We recommend that you use <?php echo HTML::anchor('http://code.google.com/hosting/', 'Google Code') ?>, <?php echo HTML::anchor('http://github.com/', 'Github') ?>, or some other repository hosting service.</small></p>
+	<p>Yes, we do offer hosting for addons and projects built using Kohana. Please post in the <?php echo HTML::anchor('http://forum.kohanaphp.com/comments.php?DiscussionID=2018', 'projects thread') ?> to have an admin create a project for you. Hosted projects get issue tracking, repository viewing, wiki, and news posting capabilities. If requested, we can also provide SVN repository hosting for your probject. You may also use your own <?php echo HTML::anchor('http://git-scm.com/', 'Git') ?>, <?php echo HTML::anchor('http://mercurial.selenic.com/wiki/', 'Mecurial') ?>, or <?php echo HTML::anchor('http://bazaar-vcs.org/', 'Bazaar') ?> repository for your project.</p>
 
 </div>
