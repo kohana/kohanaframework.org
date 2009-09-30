@@ -20,7 +20,7 @@ a img { border: 0; }
 			#menu li a:hover { color: #fff; text-shadow: #111 0.1em 0.1em 1px; }
 
 #content { background: #f1f8db url(../img/content.png) center top repeat-x; }
-	#content .wrapper { padding: 1em 0; background: transparent url(../img/wrapper.png) center top no-repeat; }
+	#content .wrapper { min-height: 390px; padding: 1em 0; background: transparent url(../img/wrapper.png) center top no-repeat; }
 	#content dl.inactive-team { font-size: 0.9em; }
 	#content p.intro { padding: 1em 20px; padding-left: 20px; margin: 0 -20px; font-size: 1.2em; }
 	#content a { color: #004352; }
