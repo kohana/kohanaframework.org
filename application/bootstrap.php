@@ -20,6 +20,15 @@ spl_autoload_register(array('Kohana', 'auto_load'));
 
 //-- Configuration and initialization -----------------------------------------
 
+if (strpos($_SERVER['HTTP_HOST'], 'kohanaphp.com') !== FALSE)
+{
+	// We are live!
+	Kohana::$environment = 'live';
+
+	// Turn off notices and strict errors
+	error_reporting(E_ALL ^ E_NOTICE ^ E_STRICT);
+}
+
 /**
  * Initialize Kohana, setting the default options.
  *
