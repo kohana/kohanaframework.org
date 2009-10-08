@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo Kohana::$charset ?>" />
 <title>Kohana: <?php echo $title ?></title>
 
-<?php echo
-	HTML::style('media/css/print.css', array('media' => 'print')), "\n",
-	HTML::style('media/css/screen.css', array('media' => 'screen')), "\n",
-	HTML::style('media/css/kohana.css', array('media' => 'screen'))
-?>
+<?php foreach ($styles as $style => $media)
+	echo HTML::style($style, array('media' => $media)), "\n" ?>
+
+<?php foreach ($scripts as $script)
+	echo HTML::script($script), "\n" ?>
 
 </head>
 <body>
