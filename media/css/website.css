@@ -3,7 +3,15 @@ body { margin: 0; }
 ol ol, ol ul, ul ul, ul ol { margin-bottom: 0; }
 a img { border: 0; }
 
+h1 small,
+h2 small,
+h3 small,
+h4 small { font-weight: normal; font-size: 0.7em; }
+h5 small,
+h6 small { font-weight: normal; font-size: 0.8em; }
+
 .caps { text-transform: uppercase; font-size: 0.8em; font-weight: normal; }
+.warning { text-transform: lowercase; font-variant: small-caps; font-weight: bold; color: #911; }
 
 #header,
 #content,
@@ -26,6 +34,8 @@ a img { border: 0; }
 	#content a { color: #004352; }
 	#content a:hover { color: #00758f; }
 	#content a:active { text-decoration: none; }
+
+#download { background: transparent url(../img/archive-50); }
 
 #footer { padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; font-size: 0.9em; }
 	#footer a { color: #809397; }
