@@ -40,7 +40,6 @@
 		<p>
 			<?php echo HTML::anchor('http://dev.kohanaphp.com/attachments/download/1355/kohana-v2.3.4.zip', 'Download (zip)') ?>
 			<?php echo HTML::anchor('http://wiki.kohanaphp.com/', 'Documentation') ?>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana2/issues', 'Issues') ?>
 			<?php echo HTML::anchor('http://source.kohanaphp.com/svn/kohana2/tags/2.3.4', 'Repository') ?>
 		</p>
 
@@ -49,6 +48,7 @@
 		<p>
 			<?php echo HTML::anchor('http://dev.kohanaphp.com/attachments/download/1349/kohana-2.4b2.zip', 'Download (zip)') ?>
 			<?php echo HTML::anchor('http://dev.kohanaphp.com/versions/show/10', 'Status') ?>
+			<?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana2/issues', 'Issues') ?>
 			<?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana2/wiki/24_Roadmap', 'Changelog') ?>
 			<?php echo HTML::anchor('http://source.kohanaphp.com/svn/kohana2/trunk', 'Repository') ?>
 		</p>
