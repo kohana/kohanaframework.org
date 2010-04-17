@@ -20,10 +20,10 @@ spl_autoload_register(array('Kohana', 'auto_load'));
 
 //-- Configuration and initialization -----------------------------------------
 
-if (strpos($_SERVER['HTTP_HOST'], 'kohanaphp.com') !== FALSE)
+if ($_SERVER['SERVER_ADDR'] !== '127.0.0.1')
 {
 	// We are live!
-	Kohana::$environment = 'live';
+	Kohana::$environment = Kohana::PRODUCTION;
 
 	// Turn off notices and strict errors
 	error_reporting(E_ALL ^ E_NOTICE ^ E_STRICT);
@@ -43,9 +43,9 @@ if (strpos($_SERVER['HTTP_HOST'], 'kohanaphp.com') !== FALSE)
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-	'base_url'   => Kohana::$environment === 'live' ? '/' : '/ko3web/',
-	'caching'    => Kohana::$environment === 'live',
-	'profile'    => Kohana::$environment !== 'live',
+	'base_url'   => '/',
+	'caching'    => Kohana::$environment === Kohana::PRODUCTION,
+	'profile'    => Kohana::$environment !== Kohana::PRODUCTION,
 	'index_file' => FALSE,
 ));
 
