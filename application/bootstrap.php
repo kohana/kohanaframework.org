@@ -80,6 +80,13 @@ Route::set('feed', 'feed/<name>', array('name' => '.+'))
 		'action'     => 'load',
 	));
 
+// Handles: download/$file
+Route::set('file', 'download/<file>', array('file' => '.+'))
+	->defaults(array(
+		'controller' => 'file',
+		'action'     => 'get',
+	));
+
 // Handles: $lang/$page and $page
 Route::set('page', '((<lang>/)<page>)', array('lang' => '[a-z]{2}', 'page' => '.+'))
 	->defaults(array(
