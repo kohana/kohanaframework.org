@@ -7,6 +7,11 @@
 <?php foreach ($styles as $style => $media)
 	echo HTML::style($style, array('media' => $media)), "\n" ?>
 
+
+<script type="text/javascript">
+var base_url = '<?php echo URL::site() ?>';
+</script>
+
 <?php foreach ($scripts as $script)
 	echo HTML::script($script), "\n" ?>
 
@@ -47,24 +52,15 @@
 		</div>
 		<div class="discussions feed span-8">
 			<h6 class="caps top">Latest Discussions</h6>
-			<ol>
-				<?php echo View::factory('template/feed', array(
-					'feed'  => 'http://forum.kohanaphp.com/search.php?PostBackAction=Search&Advanced=1&Type=Comments&Feed=RSS2',
-					'limit' => 5,
-					'more'  => 'More discussions',
-				)) ?>
-			</ol>
+			<?php echo Request::factory(Route::get('feed')->uri(array(
+					'name' => 'forum',
+				)))->execute()->response ?>
 		</div>
 		<div class="changes feed span-8 suffix-1 last">
 			<h6 class="caps top">Latest Development</h6>
-			<ol>
-				<?php echo View::factory('template/feed', array(
-					'feed'  => 'http://dev.kohanaphp.com/activity.atom?show_changesets=1',
-					'limit' => 5,
-					'link'  => 'id',
-					'more'  => 'More development',
-				)) ?>
-			</ol>
+			<?php echo Request::factory(Route::get('feed')->uri(array(
+					'name' => 'dev',
+				)))->execute()->response ?>
 		</div>
 	</div>
 </div>

@@ -81,6 +81,15 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+
+// Handles: feed/$type.rss and feed/$type.atom
+Route::set('feed', 'feed/<name>', array('name' => '.+'))
+	->defaults(array(
+		'controller' => 'feed',
+		'action'     => 'load',
+	));
+
+// Handles: $lang/$page and $page
 Route::set('page', '((<lang>/)<page>)', array('lang' => '[a-z]{2}', 'page' => '.+'))
 	->defaults(array(
 		'controller' => 'page',
