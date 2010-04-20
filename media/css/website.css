@@ -35,6 +35,12 @@ h6 small { font-weight: normal; font-size: 0.8em; }
 	#content a:hover { color: #00758f; }
 	#content a:active { text-decoration: none; }
 
+#home {  }
+	#home dl {  }
+		#home dd { margin-left: 0; }
+	#home ul { margin-left: 0; padding-left: 1em; }
+	#home .download .link a { display: block; line-height: 60px; padding-left: 64px; font-size: 1.2em; background: transparent url(../img/download.png) 8px center no-repeat; }
+
 #download { background: transparent url(../img/archive-50); }
 
 #footer { padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; font-size: 0.9em; }

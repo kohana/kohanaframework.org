@@ -1,7 +1,8 @@
 <div id="home" class="span-22 prefix-1 suffix-1">
 	<div class="about span-22 last">
 		<h1>The Kohana PHP Framework</h1>
-		<p class="intro">Kohana is an elegant <abbr title="Hierarchical Model View Controller">HMVC</abbr> PHP5 framework that provides a rich set of components for building efficient and reusable web applications. It requires very little configuration, fully supports UTF-8 and <abbr title="internationalization">i18n</abbr>, and provides many of the tools that a developer needs within a highly flexible system.</p>
+		<p class="intro">Kohana is an elegant <abbr title="Hierarchical Model View Controller">HMVC</abbr> PHP5 framework that provides a rich set of components for building web applications.</p>
+		<p>It requires very little configuration, fully supports UTF-8 and <abbr title="internationalization">i18n</abbr>, and provides many of the tools that a developer needs within a highly flexible system. The integrated class auto-loading, cascading filesystem, highly consistent <abbr title="Application Programming Interface">API</abbr>, and easy integration with vendor libraries make it viable for any project, large or small.</p>
 	</div>
 	<div class="features span-12 suffix-2">
 		<h2>Why Use Kohana?</h2>
@@ -30,25 +31,36 @@
 			<dt>You prefer to write your own code, rather than having it generated for you.</dt>
 			<dd>There are no code generators and endless configuration files, so setting up is <em>fast</em>.</dd>
 
-
-			<!-- <dt>You care about web standards.</dt>
-			<dd>We do too.</dd> -->
+			<dt>You need community support.</dt>
+			<dd>A very active community <?php echo html::anchor('http://forum.kohanaframework.org/', 'forum') ?> and <?php echo html::anchor('irc://freenode.net/kohana', 'IRC channel') ?> means that most questions are answered very quickly.</dd>
 		</dl>
 	</div>
-	<div class="download span-8 last">
-		<h2>Download &amp; Use</h2>
-		<dl>
-			<dt>Stable</dt>
-			<dd><?php echo html::anchor(Route::get('file')->uri(array('file' => 'kohana-3.0.4.2.zip')), 'v3.0.4.2') ?></dd>
-			<dd><?php echo html::anchor(Route::get('docs/guide')->uri(), 'User Guide') ?></dd>
+	<div class="sidebar span-8 last">
+		<!-- <div class"features span-8 last">
+			<h2>Best Features</h2>
+			<ul>
+				<li>Completely community driven</li>
+				<li>Strict PHP 5.2+ <abbr title="Object Oriented Programming">OOP</abbr></li>
+				<li>Integrated class auto-loading</li>
+				<li>Cascading file system design</li>
+				<li>Supports translation and UTF8</li>
+				<li>Highly consistent <abbr title="Application Programming Interface">API</abbr></li>
+				<li>Compatible with vendor libraries</li>
+			</ul>
+		</div> -->
 
-			<dt>Legacy</dt>
-			<dd><?php echo html::anchor(Route::get('file')->uri(array('file' => 'kohana-2.4rc1.zip')), 'v2.4rc1') ?></dd>
+		<div class="download span-8 last">
+			<h2>Download</h2>
+			<p class="link"><?php echo html::anchor(Route::get('file')->uri(array('file' => 'kohana-3.0.4.2.zip')), 'v3.0.4.2 (stable)') ?></p>
+			<p>Other releases can be found in the <?php echo html::anchor(Route::get('page')->uri(array('page' => 'download')), 'download') ?> section.</p>
+		</div>
 
-			<dt>Unsupported</dt>
-			<dd>v3.2.4</dd>
-			<dd><?php echo html::anchor('http://legacy.kohanaphp.com/wiki', 'Wiki') ?></dd>
-		</dl>
+		<div class="donate span-8 last">
+			<h2>Donate</h2>
+			<p class="intro">If you use Kohana, we ask that you <?php echo html::anchor(Route::get('page')->uri(array('page' => 'donate'))) ?> to ensure future development is possible.</p>
+			<h6>Where will my money go?</h6>
+			<p>Your donations are used to cover the cost of providing the Kohana website and related resources. Your donations are not used for any personal gain. As part of the <?php echo html::anchor('http://conservancy.softwarefreedom.org/', 'Software Freedom Conservancy') ?>, your donations are fully tax-deductible to the extent permitted by law.</p>
+		</div>
 	</div>
 	<div class="showcase span-22 last">
 		<h1>Application Showcase</h1>
