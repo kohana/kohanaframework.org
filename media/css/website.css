@@ -40,8 +40,15 @@ h6 small { font-weight: normal; font-size: 0.8em; }
 		#home dd { margin-left: 0; }
 	#home ul { margin-left: 0; padding-left: 1em; }
 	#home .download .link a { display: block; line-height: 60px; padding-left: 64px; font-size: 1.2em; background: transparent url(../img/download.png) 8px center no-repeat; }
+	#home .download .link a:hover { background-color: #fff; }
 
 #download { background: transparent url(../img/archive-50); }
+	#download .package { margin-bottom: 1em; }
+		#download .package .details { padding: 1em; background: #ccc; border-radius: 0.4em; }
+			#download .package ul { display: block; list-style: none; margin: 1em 0; padding: 0; }
+				#download .package li { display: inline-block !important; display: inline; margin: 0 1em 0 0; padding: 0;  }
+					#download .package li.download a { padding: 0.4em 1em; padding-left: 26px; background: #eee url(../icon/arrow_down.png) 6px center no-repeat; border-radius: 0.4em; }
+					#download .package li.download a:hover { background-color: #fff; }
 
 #footer { padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; font-size: 0.9em; }
 	#footer a { color: #809397; }

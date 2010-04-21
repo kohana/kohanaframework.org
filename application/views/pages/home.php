@@ -14,13 +14,13 @@
 			<dd>Extending existing components and adding new libraries is very easy.</dd>
 
 			<dt>You need to write commercial applications.</dt>
-			<dd>Licensed under BSD, so you can use and modify it for commercial purposes.</dd>
+			<dd>Uses the <?php echo HTML::anchor('http://creativecommons.org/licenses/BSD/', 'BSD license') ?>, so you can use and modify it for commercial purposes.</dd>
 
 			<dt>You want a very fast framework.</dt>
-			<dd>Benchmarking a framework is hard and rarely reflects the real world, but Kohana is very efficient and carefully optimized.</dd>
+			<dd>Benchmarking a framework is hard and rarely reflects the real world, but Kohana is very efficient and carefully optimized for real world usage.</dd>
 
 			<dt>You want good debugging and profiling tools.</dt>
-			<dd>Simple and effective tools help identify and solve issues quickly.</dd>
+			<dd>Simple and effective tools help identify and solve performance issues quickly.</dd>
 
 			<dt>You want to know what the framework is doing.</dt>
 			<dd>Very well commented code and a simple routing structure makes it easy to understand what is happening.</dd>
@@ -29,37 +29,26 @@
 			<dd>This is an <abbr title="Object Oriented Programming">OOP</abbr> framework that is extremely <abbr title="Don't Repeat Yourself">DRY</abbr>. Everything is built using strict PHP 5.2 classes and objects.</dd>
 
 			<dt>You prefer to write your own code, rather than having it generated for you.</dt>
-			<dd>There are no code generators and endless configuration files, so setting up is <em>fast</em>.</dd>
+			<dd>There are no code generators and endless configuration files, so setting up is fast and easy.</dd>
 
 			<dt>You need community support.</dt>
-			<dd>A very active community <?php echo html::anchor('http://forum.kohanaframework.org/', 'forum') ?> and <?php echo html::anchor('irc://freenode.net/kohana', 'IRC channel') ?> means that most questions are answered very quickly.</dd>
+			<dd>A very active community <?php echo HTML::anchor('http://forum.kohanaframework.org/', 'forum') ?> and <?php echo html::anchor('irc://freenode.net/kohana', 'IRC channel') ?> means that most questions are answered very quickly.</dd>
 		</dl>
 	</div>
 	<div class="sidebar span-8 last">
-		<!-- <div class"features span-8 last">
-			<h2>Best Features</h2>
-			<ul>
-				<li>Completely community driven</li>
-				<li>Strict PHP 5.2+ <abbr title="Object Oriented Programming">OOP</abbr></li>
-				<li>Integrated class auto-loading</li>
-				<li>Cascading file system design</li>
-				<li>Supports translation and UTF8</li>
-				<li>Highly consistent <abbr title="Application Programming Interface">API</abbr></li>
-				<li>Compatible with vendor libraries</li>
-			</ul>
-		</div> -->
-
 		<div class="download span-8 last">
-			<h2>Download</h2>
-			<p class="link"><?php echo html::anchor(Route::get('file')->uri(array('file' => 'kohana-3.0.4.2.zip')), 'v3.0.4.2 (stable)') ?></p>
-			<p>Other releases can be found in the <?php echo html::anchor(Route::get('page')->uri(array('page' => 'download')), 'download') ?> section.</p>
+			<h2>Latest Download</h2>
+			<?php $file = Kohana::config('files.kohana-latest') ?>
+			<p class="link"><?php echo HTML::anchor(Route::get('file')->uri(array('file' => 'kohana-latest')), $file['version'].' ('.$file['status'].')') ?></p>
+			<p class="bottom">Documentation is available online in the <?php echo HTML::anchor(Route::get('docs/guide')->uri(), 'user guide') ?>.</p>
+			<p class="top">Other releases can be found in the <?php echo html::anchor(Route::get('page')->uri(array('page' => 'download')), 'download') ?> section.</p>
 		</div>
 
 		<div class="donate span-8 last">
 			<h2>Donate</h2>
-			<p class="intro">If you use Kohana, we ask that you <?php echo html::anchor(Route::get('page')->uri(array('page' => 'donate'))) ?> to ensure future development is possible.</p>
+			<p class="intro">If you use Kohana, we ask that you <?php echo HTML::anchor(Route::get('page')->uri(array('page' => 'donate'))) ?> to ensure future development is possible.</p>
 			<h6>Where will my money go?</h6>
-			<p>Your donations are used to cover the cost of providing the Kohana website and related resources. Your donations are not used for any personal gain. As part of the <?php echo html::anchor('http://conservancy.softwarefreedom.org/', 'Software Freedom Conservancy') ?>, your donations are fully tax-deductible to the extent permitted by law.</p>
+			<p>Your donations are used to cover the cost of providing the Kohana website and related resources. Your donations are not used for any personal gain. As part of the <?php echo HTML::anchor('http://conservancy.softwarefreedom.org/', 'Software Freedom Conservancy') ?>, your donations are fully tax-deductible to the extent permitted by law.</p>
 		</div>
 	</div>
 	<div class="showcase span-22 last">
