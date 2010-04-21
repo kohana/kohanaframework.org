@@ -10,32 +10,35 @@ class Controller_Feed extends Controller {
 
 	public function action_load($name, $type = NULL)
 	{
-		$feed = Sprig::factory('feed', array('name' => $name))
-			->load();
+		// Load the feed configuration
+		$feed = Kohana::config("feeds.$name");
 
-		if ( ! $feed->loaded())
+		if ( ! $feed)
 		{
-			throw new Kohana_Exception('Requested feed not found: :name', array(':name' => $name));
+			throw new Kohana_Exception('Requested feed not found: :name', array(
+				':name' => $name,
+			));
 		}
 
 		$this->request->response = View::factory('template/feed')
 			->bind('links', $links)
-			->bind('feed', $feed);
+			->bind('feed', $feed)
+			->bind('name', $name);
 
 		if (Request::$is_ajax)
 		{
 			// Actually load the list of feed items and return it
 
 			// Set the caching key name
-			$cache = "feed:{$feed->id}";
+			$cache = "feed:{$feed['title']}";
 
 			// Load the feed items from cache
-			$links = Kohana::cache($cache.'x', NULL, $feed->lifetime);
+			$links = Kohana::cache($cache.'x', NULL, $feed['cache']);
 
 			if ( ! $links)
 			{
 				// Parse the feed with the given limit
-				$items = Feed::parse($feed->url, $feed->limit);
+				$items = Feed::parse($feed['feed'], $feed['limit']);
 
 				$links = array();
 				foreach ($items as $item)
@@ -48,7 +51,7 @@ class Controller_Feed extends Controller {
 				}
 
 				// Cache the parsed feed
-				Kohana::cache($cache, $links, $feed->lifetime);
+				Kohana::cache($cache, $links, $feed['cache']);
 			}
 		}
 	}
