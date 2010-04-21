@@ -15,8 +15,7 @@ abstract class Controller_Website extends Controller_Template {
 				);
 
 			$this->template->scripts = array(
-				'media/js/jquery.min.js',
-				// 'http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js',
+				'http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js',
 				'media/js/website.js',
 			);
 		}
