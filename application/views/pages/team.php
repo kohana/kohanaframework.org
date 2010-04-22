@@ -18,7 +18,7 @@
 		<dd>John Heathco <span class="fancy">aka</span> jheathco</dd>
 		<dd>Kiall Mac Innes <span class="fancy">aka</span> Kiall</dd>
 		<dd>Parnell Springmeyer <span class="fancy">aka</span> ixmatus</dd>
-		<dd>Sam Clark <span class="fancy">aka</span> samsoir</dd>
+		<dd>Sam de Freyssinet <span class="fancy">aka</span> samsoir</dd>
 		<dd>Geert De Deckere <span class="fancy">aka</span> GeertDD</dd>
 
 		<dt>Contributors</dt>
