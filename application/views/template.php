@@ -65,5 +65,7 @@ var base_url = '<?php echo URL::site() ?>';
 	</div>
 </div>
 
+<?php include Kohana::find_file('views', 'template/stats') ?>
+
 </body>
 </html>
