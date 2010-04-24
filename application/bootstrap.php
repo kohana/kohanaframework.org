@@ -87,6 +87,13 @@ Route::set('file', 'download/<file>', array('file' => '.+'))
 		'action'     => 'get',
 	));
 
+// Handles: donate
+Route::set('donate', 'donate(/<action>)')
+	->defaults(array(
+		'controller' => 'donate',
+		'action'     => 'index',
+	));
+
 // Handles: $lang/$page and $page
 Route::set('page', '((<lang>/)<page>)', array('lang' => '[a-z]{2}', 'page' => '.+'))
 	->defaults(array(
