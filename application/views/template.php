@@ -2,6 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo Kohana::$charset ?>" />
+
+<meta name="description" content="Kohana is an elegant HMVC PHP5 framework that provides a rich set of components for building web applications." />
+<meta name="keywords" content="kohana, php, php 5, framework, mvc, hmvc, oop, object oriented, bsd license, open source, free, utf8, utf-8, i18n, internationalization, translation, international, database, modeling, views, controllers, classes, libraries, dry, secure, fast, lightweight, encryption, extensible, cascading filesystem">
+
+<link rel="shortcut icon" href="/media/img/favicon.png" type="image/png" />
+
 <title>Kohana: <?php echo $title ?></title>
 
 <?php foreach ($styles as $style => $media)
