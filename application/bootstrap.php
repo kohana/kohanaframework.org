@@ -64,7 +64,6 @@ Kohana::$config->attach(new Kohana_Config_File);
  */
 Kohana::modules(array(
 	'database'   => MODPATH.'database',   // Database access
-	'sprig'      => MODPATH.'sprig',      // Sprig modeling
 	'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
 
