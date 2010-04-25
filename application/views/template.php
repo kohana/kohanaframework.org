@@ -52,9 +52,8 @@ var base_url = '<?php echo URL::site() ?>';
 		<div class="copyright span-6 prefix-1">
 			<p class="caps top"><?php echo HTML::anchor('', 'Kohana', array('class' => 'logo')) ?>
 				Copyright &copy;2007-<?php echo date('Y') ?><br/>
-				All rights reserved<br/>
 				The awesome <?php echo HTML::anchor('team', 'Kohana Team') ?><br/>
-				Uses the excellent <?php echo html::anchor('http://www.famfamfam.com/lab/icons/silk/', 'silk icons') ?>
+				Silk icons made by <?php echo html::anchor('http://www.famfamfam.com/lab/icons/silk/', 'famfamfam') ?>
 			</p>
 		</div>
 		<div class="discussions feed span-8">
