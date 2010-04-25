@@ -13,7 +13,8 @@ h6 small { font-weight: normal; font-size: 0.8em; }
 dl dd { margin-left: 0; }
 
 .caps { text-transform: uppercase; font-size: 0.8em; font-weight: normal; }
-.warning { text-transform: lowercase; font-variant: small-caps; font-weight: bold; color: #911; }
+.status { text-transform: lowercase; font-variant: small-caps; font-weight: bold; color: #911; }
+.container .colborder { border-color: #d3d8bc; }
 
 #header,
 #content,
@@ -51,13 +52,17 @@ dl dd { margin-left: 0; }
 	#donate .okay { background-image: url(../icon/error.png); }
 	#donate .good { background-image: url(../icon/accept.png); }
 
-#download { background: transparent url(../img/archive-50); }
+#download { }
 	#download .package { margin-bottom: 1em; }
 		#download .package .details { padding: 1em; background: #ccc; border-radius: 0.4em; }
 			#download .package ul { display: block; list-style: none; margin: 1em 0; padding: 0; }
 				#download .package li { display: inline-block !important; display: inline; margin: 0 1em 0 0; padding: 0;  }
-					#download .package li.download a { padding: 0.4em 1em; padding-left: 26px; background: #eee url(../icon/arrow_down.png) 6px center no-repeat; border-radius: 0.4em; }
-					#download .package li.download a:hover { background-color: #fff; }
+					#download .package .links a { padding: 0.4em; padding-left: 20px; background: transparent none 0 center no-repeat; }
+					#download .package .links a.download { background-image: url(../icon/package_go.png); }
+					#download .package .links a.changelog { background-image: url(../icon/report.png); }
+					#download .package .links a.documentation { background-image: url(../icon/book_link.png); }
+					#download .package .links a.issues { background-image: url(../icon/bug.png); }
+					#download .package .links a.repository { background-image: url(../icon/wrench.png); }
 
 #footer { padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; font-size: 0.9em; }
 	#footer a { color: #809397; }

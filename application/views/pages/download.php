@@ -1,57 +1,50 @@
 <div id="download" class="span-22 prefix-1 suffix-1 last">
 	<h1>Get yours today!</h1>
 
-	<p class="intro">Kohana has a couple different versions to choose from.</p>
+	<p class="intro">Kohana has a couple different versions to choose from. All versions are supported for two years from the release date.</p>
 
-	<dl>
-		<dt>Never used Kohana before?</dt>
-		<dd>Try v3.x and see if you like it.</dd>
+	<!-- <p>Releases follow the format of <code>release.major.minor.bugfix</code>. Bugfix releases will never make any feature or API changes. Minor versions may introduce new features that do not change the API. Major versions may introduce new features that require changing the API. Upgrading between minor and bugfix versions will never break an application, except in the case of a serious security flaw being discovered. <small>To date, this has never happened.</small></p> -->
 
-		<dt>Building a completely new application and expect to launch in 4+ months?</dt>
-		<dd>We recommend v3.x for new applications.</dd>
-
-		<dt>Upgrading an existing Kohana-based application?</dt>
-		<dd>Upgrade to v2.3.x first, then review the changes in v2.4.x.</dd>
-	</dl>
-
-	<div class="package span-11">
-
-		<h2 class="bottom">v3.0.0 <small class="fancy">"renaissance"</small><br/>
-			<small>Current stable release of the v3.x branch.</small></h2>
-		<p>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/attachments/download/1328/kohana-v3.0.zip', 'Download (zip)') ?>
-			<?php echo HTML::anchor('guide', 'Documentation') ?>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues') ?>
-			<?php echo HTML::anchor('http://github.com/kohana/kohana', 'Repository') ?>
-		</p>
-
-		<h3 class="bottom">v3.1.0 <small class="warning">unstable</small><br/>
-			<small>Current beta release of the v3.x branch.</small></h3>
-		<p>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/versions/show/130', 'Status') ?>
-			<?php echo HTML::anchor('http://github.com/kohana/core/tree/unstable', 'Repository') ?>
-		</p>
-
+	<div class="featured span-12 suffix-2 colborder">
+		<div class="package span-12 last">
+			<h2>v3.0.4.2 <small class="fancy">"<?php echo Kohana::CODENAME ?>"</small> <small class="status">stable</small></h2>
+			<p class="description">Current stable release of the 3.x series, this is the recommended version for all new projects.
+				Support will last until October 2012.</p>
+			<ul class="links">
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1548/kohana-3.0.4.2.zip', 'Download', array('class' => 'download')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/159', 'Changes', array('class' => 'changelog')) ?></li>
+				<li><?php echo HTML::anchor(Route::get('docs/guide')->uri(), 'Documentation', array('class' => 'documentation')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
+			</ul>
+		</div>
+		<div class="package span-12 last">
+			<h2>v2.4.0 <small class="status">beta</small></h2>
+			<p class="description">Current beta release of the 2.x series, this will be a recommended upgrade for all 2.x users.
+				It will be the <strong>last major release</strong> of the 2.x series.</p>
+			<ul class="links">
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1469/kohana-2.4rc2.zip', 'Download', array('class' => 'download')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/10', 'Status', array('class' => 'changelog')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/projects/kohana2/repository', 'Repository', array('class' => 'repository')) ?></li>
+			</ul>
+		</div>
 	</div>
-	<div class="package span-11 last">
+	<div class="sidebar span-8 last">
+		<div class="package span-8 last">
+			<h2 class="bottom">v3.1.0 <small class="status">unstable</small></h2>
+			<p class="description">Currently under development, this will be the next major release of the 3.x series.</p>
+			<ul class="links">
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/130', 'Status', array('class' => 'changelog')) ?></li>
+				<li><?php echo HTML::anchor('http://github.com/kohana/core/tree/unstable', 'Repository', array('class' => 'repository')) ?></li>
+			</ul>
+		</div>
 
-		<h2 class="bottom">v2.3.4 <small class="fancy">"buteo regalis"</small> <small class="warning">final</small><br/>
-			<small>Current stable release of the v2.x branch.</small></h2>
-		<p>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/attachments/download/1355/kohana-v2.3.4.zip', 'Download (zip)') ?>
-			<?php echo HTML::anchor('http://wiki.kohanaphp.com/', 'Documentation') ?>
-			<?php echo HTML::anchor('http://source.kohanaphp.com/svn/kohana2/tags/2.3.4', 'Repository') ?>
-		</p>
-
-		<h3 class="bottom">v2.4.0 <small class="warning">unstable</small><br/>
-			<small>Current beta release of the v2.x branch.</small></h3>
-		<p>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/attachments/download/1349/kohana-2.4b2.zip', 'Download (zip)') ?>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/versions/show/10', 'Status') ?>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana2/issues', 'Issues') ?>
-			<?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana2/wiki/24_Roadmap', 'Changelog') ?>
-			<?php echo HTML::anchor('http://source.kohanaphp.com/svn/kohana2/trunk', 'Repository') ?>
-		</p>
-
+		<div class="package span-8 last">
+			<h2>v2.3.4 <small class="fancy">"buteo regalis"</small> <small class="status">final</small></h2>
+			<p class="description">Final release of the 2.3 series, no longer supported. Not recommended for new projects.</p>
+			<ul class="links">
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1355/kohana-v2.3.4.zip', 'Download', array('class' => 'download')) ?></li>
+				<li><?php echo HTML::anchor('http://docs.kohanaphp.com/', 'Documentation', array('class' => 'documentation')) ?></li>
+			</ul>
+		</div>
 	</div>
 </div>
