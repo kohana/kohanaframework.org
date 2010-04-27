@@ -51,6 +51,8 @@ dl dd { margin-left: 0; }
 	#donate .warn { background-image: url(../icon/exclamation.png); }
 	#donate .okay { background-image: url(../icon/error.png); }
 	#donate .good { background-image: url(../icon/accept.png); }
+	#donate table { border: none; margin: 0; width: 90%; }
+		#donate table td { border: none; padding: 0 0.4em 0; }
 
 #download { }
 	#download .package { margin-bottom: 1em; }
