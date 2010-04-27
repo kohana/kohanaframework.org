@@ -53,7 +53,7 @@ dl dd { margin-left: 0; }
 	#donate .okay { background-image: url(../icon/error.png); }
 	#donate .good { background-image: url(../icon/accept.png); }
 	#donate table { border: none; margin: 0; width: 90%; }
-		#donate table td { border: none; padding: 0 0.4em 0; }
+		#donate table td { border: none; padding: 0.2em; vertical-align: middle; }
 
 #download { }
 	#download .package { margin-bottom: 1em; }
