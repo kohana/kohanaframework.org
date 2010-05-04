@@ -33,12 +33,15 @@ class Controller_Feed extends Controller {
 			$cache = "feed:{$feed['title']}";
 
 			// Load the feed items from cache
-			$links = Kohana::cache($cache.'x', NULL, $feed['cache']);
+			$links = Kohana::cache($cache, NULL, $feed['cache']);
 
 			if ( ! $links)
 			{
 				// Parse the feed with the given limit
 				$items = Feed::parse($feed['feed'], $feed['limit']);
+
+				// Get the base URL of the feed
+				$base = Arr::get($feed, 'base', '');
 
 				$links = array();
 				foreach ($items as $item)
@@ -47,7 +50,7 @@ class Controller_Feed extends Controller {
 					$link = isset($item['id']) ? $item['id'] : $item['link'];
 
 					// Add the link to the list
-					$links[(string) $link] = (string) $item['title'];
+					$links[$base.$link] = (string) $item['title'];
 				}
 
 				// Cache the parsed feed
