@@ -27,6 +27,9 @@ if ($_SERVER['SERVER_ADDR'] !== '127.0.0.1')
 
 	// Turn off notices and strict errors
 	error_reporting(E_ALL ^ E_NOTICE ^ E_STRICT);
+
+	// Do not hide errors
+	ini_set('display_errors', TRUE);
 }
 
 /**
