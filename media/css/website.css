@@ -72,7 +72,7 @@ dl dd { margin-left: 0; }
 	#footer .copyright { color: #405c63; }
 		#footer .copyright a { color: #405c63; text-decoration: underline; }
 		#footer .copyright a.logo { display: block; width: 100px; height: 24px; background: transparent url(../img/kohana_dark.png) 0 0 no-repeat; text-indent: -3000em; }
+	#footer .feed h6 a { margin-left: -14px; padding-left: 14px; letter-spacing: 0.11em; background: transparent url(../img/feed.png) left center no-repeat; text-decoration: none; color: #fff; }
+		#footer .feed ol { margin: 0; padding: 0; list-style: none; }
+			#footer .feed li { margin: 0; padding: 0; }
 
-.feed h6 { margin-left: -14px; padding-left: 14px; letter-spacing: 0.11em; background: transparent url(../img/feed.png) left center no-repeat; }
-	.feed ol { margin: 0; padding: 0; list-style: none; }
-		.feed li { margin: 0; padding: 0; }

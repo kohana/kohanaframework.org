@@ -57,13 +57,15 @@ var base_url = '<?php echo URL::site() ?>';
 			</p>
 		</div>
 		<div class="discussions feed span-8">
-			<h6 class="caps top">Latest Discussions</h6>
+			<?php $feed = Kohana::config('feeds.forum') ?>
+			<h6 class="caps top"><?php echo HTML::anchor($feed['feed'], 'Latest '.$feed['title']) ?></h6>
 			<?php echo Request::factory(Route::get('feed')->uri(array(
 					'name' => 'forum',
 				)))->execute()->response ?>
 		</div>
 		<div class="changes feed span-8 suffix-1 last">
-			<h6 class="caps top">Latest Development</h6>
+			<?php $feed = Kohana::config('feeds.dev') ?>
+			<h6 class="caps top"><?php echo HTML::anchor($feed['feed'], 'Latest '.$feed['title']) ?></h6>
 			<?php echo Request::factory(Route::get('feed')->uri(array(
 					'name' => 'dev',
 				)))->execute()->response ?>
