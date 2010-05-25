@@ -2,8 +2,8 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'  => 'v3.0.4.2',
+		'version'  => 'v3.0.5',
 		'status'   => 'stable',
-		'download' => 'http://dev.kohanaframework.org/attachments/download/1548/kohana-3.0.4.2.zip',
+		'download' => 'http://dev.kohanaframework.org/attachments/download/1561/kohana-3.0.5.zip',
 	),
 );
