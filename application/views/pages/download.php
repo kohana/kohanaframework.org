@@ -7,18 +7,18 @@
 
 	<div class="featured span-12 suffix-2 colborder">
 		<div class="package span-12 last">
-			<h2>v3.0.4.2 <small class="fancy">"<?php echo Kohana::CODENAME ?>"</small> <small class="status">stable</small></h2>
+			<h2>v3.0.5 <small class="fancy">"<?php echo Kohana::CODENAME ?>"</small> <small class="status">stable</small></h2>
 			<p class="description">Current stable release of the 3.x series, this is the recommended version for all new projects.
 				Support will last until October 2012.</p>
 			<ul class="links">
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1548/kohana-3.0.4.2.zip', 'Download', array('class' => 'download')) ?></li>
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/159', 'Changes', array('class' => 'changelog')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1561/kohana-3.0.5.zip', 'Download', array('class' => 'download')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/174', 'Changes', array('class' => 'changelog')) ?></li>
 				<li><?php echo HTML::anchor(Route::get('docs/guide')->uri(), 'Documentation', array('class' => 'documentation')) ?></li>
 				<li><?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
 			</ul>
 		</div>
 		<div class="package span-12 last">
-			<h2>v2.4.0 <small class="status">beta</small></h2>
+			<h2>v2.4.0 <small class="status">rc2</small></h2>
 			<p class="description">Current beta release of the 2.x series, this will be a recommended upgrade for all 2.x users.
 				It will be the <strong>last major release</strong> of the 2.x series.</p>
 			<ul class="links">
