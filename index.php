@@ -44,14 +44,6 @@ define('EXT', '.php');
 error_reporting(E_ALL | E_STRICT);
 
 /**
- * Display all errors. Need this hack for the live server because display errors
- * is diabled globally.
- * 
- * @see  http://php.net/display_errors
- */
-ini_set('display_errors', TRUE);
-
-/**
  * End of standard configuration! Changing any of the code below should only be
  * attempted by those with a working knowledge of Kohana internals.
  *
