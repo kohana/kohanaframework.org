@@ -25,9 +25,6 @@ if ($_SERVER['SERVER_ADDR'] !== '127.0.0.1')
 	// We are live!
 	Kohana::$environment = Kohana::PRODUCTION;
 
-	// Turn off notices and strict errors
-	error_reporting(E_ALL ^ E_NOTICE ^ E_STRICT);
-
 	// Do not hide errors
 	ini_set('display_errors', TRUE);
 }
@@ -48,7 +45,6 @@ if ($_SERVER['SERVER_ADDR'] !== '127.0.0.1')
 Kohana::init(array(
 	'base_url'   => '/',
 	'caching'    => Kohana::$environment === Kohana::PRODUCTION,
-	'profile'    => Kohana::$environment !== Kohana::PRODUCTION,
 	'index_file' => FALSE,
 ));
 
