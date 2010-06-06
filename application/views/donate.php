@@ -55,12 +55,13 @@
 		<h2>Account Status</h2>
 		<dl class="account">
 			<dt>Latest Expenses</dt>
+			<dd>$9.25 on 2010-04-27 for domain names</dd>
 			<dd>$27.75 on 2010-02-06 for domain names</dd>
 			<dd>$22.00 on 2009-10-26 for domain names</dd>
 			<dd>$490.00 on 2009-11-18 for website hosting</dd>
 
 			<dt>Current Balance</dt>
-			<dd class="good">$1,100.55</dd>
+			<dd class="good">$1,908.07</dd>
 			<dd><small>Upcoming expenses will be paid in full.</small></dd>
 		</dl>
 	</div>
