@@ -7,12 +7,12 @@
 
 	<div class="featured span-12 suffix-2 colborder">
 		<div class="package span-12 last">
-			<h2>v3.0.5 <small class="fancy">"<?php echo Kohana::CODENAME ?>"</small> <small class="status">stable</small></h2>
+			<h2>v<?php echo Kohana::VERSION ?> <small class="fancy">"<?php echo Kohana::CODENAME ?>"</small> <small class="status">stable</small></h2>
 			<p class="description">Current stable release of the 3.x series, this is the recommended version for all new projects.
 				Support will last until October 2012.</p>
 			<ul class="links">
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1561/kohana-3.0.5.zip', 'Download', array('class' => 'download')) ?></li>
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/174', 'Changes', array('class' => 'changelog')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1566/kohana-3.0.6.zip', 'Download', array('class' => 'download')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/projects/kohana3/issues?query_id=28', 'Changes', array('class' => 'changelog')) ?></li>
 				<li><?php echo HTML::anchor(Route::get('docs/guide')->uri(), 'Documentation', array('class' => 'documentation')) ?></li>
 				<li><?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
 			</ul>
