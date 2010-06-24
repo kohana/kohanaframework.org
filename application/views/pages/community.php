@@ -13,7 +13,7 @@
 
 		<dt><?php echo HTML::anchor('irc://irc.freenode.net/kohana', HTML::image('media/img/community_icon/irc.png', array('alt' => 'IRC'))) ?></dt>
 		<dd>
-			<h3><?php echo HTML::anchor('irc://irc.freenode.net/kohana', 'Forum') ?></h3>
+			<h3><?php echo HTML::anchor('irc://irc.freenode.net/kohana', 'IRC') ?></h3>
 			Chat with follow Kohana users at <?php echo HTML::anchor('irc://irc.freenode.net/kohana', '#kohana on freenode') ?>.
 		</dd>
 
