@@ -25,3 +25,6 @@
 [submodule "modules/cache"]
 	path = modules/cache
 	url = git://github.com/kohana/cache.git
+[submodule "modules/oauth"]
+	path = modules/oauth
+	url = git://github.com/kohana/oauth.git
