@@ -3,8 +3,8 @@
 return array(
 	'forum' => array(
 		'title' => 'Discussions',
-		'feed'  => 'http://forum.kohanaphp.com/search.php?PostBackAction=Search&Advanced=1&Type=Comments&Feed=RSS2',
-		'link'  => 'http://forum.kohanaphp.com/',
+		'feed'  => 'http://forum.kohanaframework.org/discussions/feed.rss',
+		'link'  => 'http://forum.kohanaframework.org/',
 		'limit' => 8,
 		'cache' => 30,
 	),
