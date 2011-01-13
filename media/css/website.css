@@ -67,6 +67,17 @@ dl dd { margin-left: 0; }
 					#download .package .links a.issues { background-image: url(../icon/bug.png); }
 					#download .package .links a.repository { background-image: url(../icon/wrench.png); }
 
+#documentation {}
+	#documentation h2 img { vertical-align: middle; }
+	#documentation h2 a,
+	#documentation h3 a {
+		color: #000;
+		text-decoration: none;
+	}
+	#documentation #feature { padding: 10px 40px 20px; }
+		#documentation #feature img { margin-right: 10px; }
+		#documentation #feature p { padding-left: 74px; }
+
 #community dl { margin-top: 20px; }
 	#community dl h3 { margin: 10px 0 10px; font-size: 16px; }
 		#community dl h3 a { color: #000; text-decoration: none; }

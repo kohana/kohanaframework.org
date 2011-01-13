@@ -18,28 +18,7 @@
 				<li><?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
 			</ul>
 		</div>
-		<div class="package span-12 last">
-			<h2>v2.4.0 <small class="status">rc2</small></h2>
-			<p class="description">Current beta release of the 2.x series, this will be a recommended upgrade for all 2.x users.
-				It will be the <strong>last major release</strong> of the 2.x series.</p>
-			<ul class="links">
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/attachments/download/1469/kohana-2.4rc2.zip', 'Download', array('class' => 'download')) ?></li>
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/10', 'Status', array('class' => 'changelog')) ?></li>
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/projects/kohana2/repository', 'Repository', array('class' => 'repository')) ?></li>
-			</ul>
-		</div>
-	</div>
-	<div class="sidebar span-8 last">
-		<div class="package span-8 last">
-			<h2 class="bottom">v3.1.0 <small class="status">unstable</small></h2>
-			<p class="description">Currently under development, this will be the next major release of the 3.x series.</p>
-			<ul class="links">
-				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/130', 'Status', array('class' => 'changelog')) ?></li>
-				<li><?php echo HTML::anchor('http://github.com/kohana/core/tree/unstable', 'Repository', array('class' => 'repository')) ?></li>
-			</ul>
-		</div>
-
-		<div class="package span-8 last">
+		<div class="package span-11 last">
 			<h2>v2.3.4 <small class="fancy">"buteo regalis"</small> <small class="status">final</small></h2>
 			<p class="description">Final release of the 2.3 series, no longer supported. Not recommended for new projects.</p>
 			<ul class="links">
@@ -47,5 +26,18 @@
 				<li><?php echo HTML::anchor('http://docs.kohanaphp.com/', 'Documentation', array('class' => 'documentation')) ?></li>
 			</ul>
 		</div>
+	</div>
+	<div class="sidebar span-8 last">
+		<div class="package span-8 last">
+			<h2>v3.1.0 <small class="status">RC1</small></h2>
+			<p class="description">Currently under development, this will be the next major release of the 3.x series.</p>
+			<ul class="links">
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/kohana-3.1-release-3.1.0-7.zip', 'Download', array('class' => 'download')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/versions/show/130', 'Status', array('class' => 'changelog')) ?></li>
+				<li><?php echo HTML::anchor('http://github.com/kohana/kohana/tree/3.1/develop', 'Repository', array('class' => 'repository')) ?></li>
+			</ul>
+		</div>
+
+		
 	</div>
 </div>
