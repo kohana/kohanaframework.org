@@ -56,11 +56,12 @@ dl dd { margin-left: 0; }
 		#donate table td { border: none; padding: 0.2em; vertical-align: middle; }
 
 #download { }
+	#download p.release { padding: 1em 20px; padding-left: 20px; margin: 0 -20px; font-size: 1.1em; }
 	#download .package { margin-bottom: 1em; }
 		#download .package .details { padding: 1em; background: #ccc; border-radius: 0.4em; }
 			#download .package ul { display: block; list-style: none; margin: 1em 0; padding: 0; }
 				#download .package li { display: inline-block !important; display: inline; margin: 0 1em 0 0; padding: 0;  }
-					#download .package .links a { padding: 0.4em; padding-left: 20px; background: transparent none 0 center no-repeat; }
+					#download .package .links a { padding: 0.2em; padding-left: 20px; background: transparent none 0 center no-repeat; }
 					#download .package .links a.download { background-image: url(../icon/package_go.png); }
 					#download .package .links a.changelog { background-image: url(../icon/report.png); }
 					#download .package .links a.documentation { background-image: url(../icon/book_link.png); }
@@ -74,9 +75,10 @@ dl dd { margin-left: 0; }
 		color: #000;
 		text-decoration: none;
 	}
-	#documentation #feature { padding: 10px 40px 20px; }
+	#documentation #feature {  }
+		#documentation #feature ul { margin-left: 80px;; }
 		#documentation #feature img { margin-right: 10px; }
-		#documentation #feature p { padding-left: 74px; }
+		#documentation #feature p {  }
 
 #community dl { margin-top: 20px; }
 	#community dl h3 { margin: 10px 0 10px; font-size: 16px; }
@@ -89,10 +91,10 @@ dl dd { margin-left: 0; }
 
 #footer { padding: 1em 0; background: #00262f; color: #eee; text-shadow: #00262f 0.1em 0.1em 1px; font-size: 0.9em; }
 	#footer a { color: #809397; }
+	#footer p { clear: both; }
 	#footer .copyright { color: #405c63; }
 		#footer .copyright a { color: #405c63; text-decoration: underline; }
 		#footer .copyright a.logo { display: block; width: 100px; height: 24px; background: transparent url(../img/kohana_dark.png) 0 0 no-repeat; text-indent: -3000em; }
 	#footer .feed h6 a { margin-left: -14px; padding-left: 14px; letter-spacing: 0.11em; background: transparent url(../img/feed.png) left center no-repeat; text-decoration: none; color: #fff; }
 		#footer .feed ol { margin: 0; padding: 0; list-style: none; }
 			#footer .feed li { margin: 0; padding: 0; }
-

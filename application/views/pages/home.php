@@ -38,7 +38,7 @@
 			<h2>Download Latest Version</h2>
 			<?php $file = Kohana::config('files.kohana-latest') ?>
 			<p class="link"><?php echo HTML::anchor(Route::get('file')->uri(array('file' => 'kohana-latest')), $file['version'].' ('.$file['status'].')') ?></p>
-			<p class="bottom">Documentation is available online in the <?php echo HTML::anchor(Route::get('docs/guide')->uri(), 'user guide') ?>.</p>
+			<p class="bottom">Documentation is available online in the <?php echo HTML::anchor($file['documentation'], 'user guide') ?>.</p>
 			<p class="top">Other releases can be found in the <?php echo html::anchor(Route::get('page')->uri(array('page' => 'download')), 'download') ?> section.</p>
 		</div>
 
