@@ -2,11 +2,11 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'       => 'v3.1.0',
-		'codename'      => 'merle',
+		'version'       => 'v3.1.1.1',
+		'codename'      => 'aesalon',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1640/kohana-3.1.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/versions/show/130',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1643/kohana-3.1.1.1.zip',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/versions/197',
 		'documentation' => 'http://kohanaframework.org/3.1/guide/',
 	),
 	'kohana-3.0.x' => array(
