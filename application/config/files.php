@@ -5,7 +5,7 @@ return array(
 		'version'       => 'v3.1.2',
 		'codename'      => 'hirondelle',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1646/kohana-3.1.2.zip',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1650/kohana-3.1.2.zip',
 		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=43',
 		'documentation' => 'http://kohanaframework.org/3.1/guide/',
 	),
