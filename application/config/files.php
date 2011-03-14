@@ -2,19 +2,19 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'       => 'v3.1.1.1',
-		'codename'      => 'aesalon',
+		'version'       => 'v3.1.2',
+		'codename'      => 'hirondelle',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1643/kohana-3.1.1.1.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=41',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1646/kohana-3.1.2.zip',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=43',
 		'documentation' => 'http://kohanaframework.org/3.1/guide/',
 	),
 	'kohana-3.0.x' => array(
-		'version'       => 'v3.0.9',
+		'version'       => 'v3.0.10',
 		'codename'      => 'nya året',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1628/kohana-3.0.9.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=34',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1649/kohana-3.0.10.zip',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=42',
 		'documentation' => 'http://kohanaframework.org/3.0/guide/',
 	),
 );
