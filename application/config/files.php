@@ -11,7 +11,7 @@ return array(
 	),
 	'kohana-3.0.x' => array(
 		'version'       => 'v3.0.10',
-		'codename'      => 'nya året',
+		'codename'      => 'hierofalco',
 		'status'        => 'stable',
 		'download'      => 'http://dev.kohanaframework.org/attachments/download/1649/kohana-3.0.10.zip',
 		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=42',
