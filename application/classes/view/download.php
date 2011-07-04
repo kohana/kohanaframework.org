@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_Home extends View_Base {
+class View_Download extends View_Base {
 
 	/**
 	 * @var     array    partials for the page
@@ -8,32 +8,26 @@ class View_Home extends View_Base {
 	protected $_partials = array(
 		'header'   => 'partials/header',
 		'footer'   => 'partials/footer',
-		'banner'   => 'partials/home/banner',
 	);
 
 	/**
 	 * @var     boolean   show the banner space on template
 	 */
-	public $banner_exists = TRUE;
+	public $banner_exists = FALSE;
 
 	/**
 	 * @var     boolean   triggers the menu bar highlight
 	 */
-	public $menu_home = TRUE;
+	public $menu_download = TRUE;
 
-	public function download_version()
-	{
-		return $this->download['version'].' ('.$this->download['status'].')';
-	}
-
-	public function download_link()
-	{
-		return $this->download['download'];
-	}
 
 	public function body()
 	{
-		return new View_Home_Body;
+		$body = new View_Download_Body; 
+
+		$body->set('download', $this->download);
+
+		return $body;
 	}
 
 }

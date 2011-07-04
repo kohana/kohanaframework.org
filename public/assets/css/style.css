@@ -151,7 +151,7 @@ Header and navigation
 header { overflow:hidden; }
 
 header h1 { margin-top:23px; float:left; }
-header h1 a { background:url(../img/logo-new.png) no-repeat; display:block; width:200px; padding-top:70px; top: 10px; height:0px; position:absolute; overflow:hidden; }
+header h1 a { background:url(../img/logo-new.png) no-repeat; display:block; width:200px; padding-top:70px; margin-top: -15px; height:0px; overflow:hidden; }
 
 nav { text-transform:uppercase; letter-spacing:1px; font-size:93%; float:right; overflow:hidden; margin-top:24px; position:relative; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:rgba(255,255,255,.2); padding:0 12px; }
 nav li { float:left; }
@@ -300,6 +300,15 @@ Lists: Community (Homepage)
 #community li:nth-child(3n+2) { width:220px; }
 #community li:last-child { width:437px; border-bottom:0; border-right:0; padding-right:240px; position:relative; }
 #community li h3 { text-transform:uppercase; letter-spacing:1px; font:bold normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; padding-bottom:6px; }
+
+#community li a.icon { padding-left: 75px; display:block; background-position: top left; background-repeat: no-repeat; }
+#community li a#forum { background-image: url('../img/icon/forum.png'); }
+#community li a#irc { background-image: url('../img/icon/irc.png'); }
+#community li a#github { background-image: url('../img/icon/github.png'); }
+#community li a#facebook { background-image: url('../img/icon/facebook.png'); }
+#community li a#stackoverflow { background-image: url('../img/icon/stackoverflow.png'); }
+#community li a#ohloh { background-image: url('../img/icon/ohloh.png'); }
+
 #community li>a:link,
 #community li>a:visited { color:#254241; display:block; }
 #community a:hover,
@@ -322,6 +331,16 @@ Lists: Community (Homepage)
 .twitter a:link, .twitter a:visited { color:#ffffff; }
 .twitter a span { clear:both; display:block;}
 .twitter a span:first-child { font-size:18px; font-weight:bold; text-shadow:0 1px 1px rgba(0,0,0,.2); }
+
+/* 
+Download 
+*/
+
+li.lcta { list-style-type: none; list-style-position: outside; margin: 10px 0px; padding:0px; }
+li.lcta.dl a { background:url(../img/icon/package_go.png) no-repeat left center; padding-left: 25px; }
+li.lcta.changes a { background: url(../img/icon/wrench.png) no-repeat left center; padding-left: 25px; }
+li.lcta.issues a { background: url(../img/icon/bug.png) no-repeat left center; padding-left: 25px; }
+li.lcta.documentation a { background: url(../img/icon/book_link.png) no-repeat left center; padding-left: 25px; }
 
 /*
 Media

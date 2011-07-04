@@ -119,6 +119,12 @@ Kohana::$expose = TRUE;
  * defaults for the URI.
  */
 
+Route::set('download', 'download.html')
+	->defaults(array(
+		'controller' => 'download',
+		'action'     => 'index'
+	));
+
 Route::set('home', '(index.html)')
 	->defaults(array(
 		'controller' => 'home',
