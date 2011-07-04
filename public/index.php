@@ -6,14 +6,14 @@
  *
  * @see  http://docs.kohanaphp.com/install#application
  */
-$application = 'application';
+$application = '../application';
 
 /**
  * The directory in which your modules are located.
  *
  * @see  http://docs.kohanaphp.com/install#modules
  */
-$modules = 'modules';
+$modules = '../modules';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -21,7 +21,7 @@ $modules = 'modules';
  *
  * @see  http://docs.kohanaphp.com/install#system
  */
-$system = 'system';
+$system = '../system';
 
 /**
  * The default extension of resource files. If you change this, all resources
@@ -76,22 +76,14 @@ unset($application, $modules, $system);
 // Define the start time of the application
 define('KOHANA_START_TIME', microtime(TRUE));
 
-// Load the base, low-level functions
-require SYSPATH.'base'.EXT;
-
-// Load the core Kohana class
-require SYSPATH.'classes/kohana/core'.EXT;
-
-if (is_file(APPPATH.'classes/kohana'.EXT))
-{
-	// Application extends the core
-	require APPPATH.'classes/kohana'.EXT;
-}
-else
-{
-	// Load empty core extension
-	require SYSPATH.'classes/kohana'.EXT;
-}
-
 // Bootstrap the application
 require APPPATH.'bootstrap'.EXT;
+
+/**
+ * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
+ * If no source is specified, the URI will be automatically detected.
+ */
+echo Request::factory(TRUE, HTTP_Cache::factory('apc'))
+	->execute()
+	->send_headers()
+	->body();
