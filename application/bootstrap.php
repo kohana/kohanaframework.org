@@ -143,6 +143,12 @@ Route::set('team', 'team.html')
 		'action'     => 'index'
 	));
 
+Route::set('license', 'license.html')
+	->defaults(array(
+		'controller' => 'license',
+		'action'     => 'index'
+	));
+
 Route::set('home', '(index.html)')
 	->defaults(array(
 		'controller' => 'home',
