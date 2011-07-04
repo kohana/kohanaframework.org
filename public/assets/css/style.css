@@ -341,7 +341,13 @@ li.lcta.dl a { background:url(../img/icon/package_go.png) no-repeat left center;
 li.lcta.changes a { background: url(../img/icon/wrench.png) no-repeat left center; padding-left: 25px; }
 li.lcta.issues a { background: url(../img/icon/bug.png) no-repeat left center; padding-left: 25px; }
 li.lcta.documentation a { background: url(../img/icon/book_link.png) no-repeat left center; padding-left: 25px; }
+li.lcta.documentation.current a { background: url(../img/icon/book_link.png) no-repeat left center; padding-left: 25px; font-size: 16px; }
 
+/*
+Documentation
+*/
+p#book { padding: 10px 0 10px 70px; background: url(../img/book.png) no-repeat center left;}
+li.lcta.documentation.current small { font-size: 12px; }
 /*
 Media
 */

@@ -125,6 +125,24 @@ Route::set('download', 'download.html')
 		'action'     => 'index'
 	));
 
+Route::set('documentation', 'documentation.html')
+	->defaults(array(
+		'controller' => 'documentation',
+		'action'     => 'index'
+	));
+
+Route::set('development', 'development.html')
+	->defaults(array(
+		'controller' => 'development',
+		'action'     => 'index'
+	));
+
+Route::set('team', 'team.html')
+	->defaults(array(
+		'controller' => 'team',
+		'action'     => 'index'
+	));
+
 Route::set('home', '(index.html)')
 	->defaults(array(
 		'controller' => 'home',

@@ -60,4 +60,14 @@ class View_Base extends Kostache {
 	{
 		return date('Y');
 	}
+
+	/**
+	 * Turn on the google analytics in production
+	 *
+	 * @return  boolean
+	 */
+	public function stats()
+	{
+		return Kohana::$environment === Kohana::PRODUCTION;
+	}
 }
