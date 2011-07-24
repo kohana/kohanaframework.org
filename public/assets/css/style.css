@@ -301,7 +301,7 @@ Lists: Community (Homepage)
 #community li:last-child { width:437px; border-bottom:0; border-right:0; padding-right:240px; position:relative; }
 #community li h3 { text-transform:uppercase; letter-spacing:1px; font:bold normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; padding-bottom:6px; }
 
-#community li a.icon { padding-left: 75px; display:block; background-position: top left; background-repeat: no-repeat; }
+#community li a.icon { padding-left: 70px; padding-right: 0px; min-height:100px; display:block; background-position: top left; background-repeat: no-repeat; }
 #community li a#forum { background-image: url('../img/icon/forum.png'); }
 #community li a#irc { background-image: url('../img/icon/irc.png'); }
 #community li a#github { background-image: url('../img/icon/github.png'); }
@@ -346,8 +346,14 @@ li.lcta.documentation.current a { background: url(../img/icon/book_link.png) no-
 /*
 Documentation
 */
-p#book { padding: 10px 0 10px 70px; background: url(../img/book.png) no-repeat center left;}
+p#book { padding: 10px 0 10px 70px; background: url(../img/book.png) no-repeat center left; }
 li.lcta.documentation.current small { font-size: 12px; }
+
+/*
+Development
+*/
+p#github {padding: 20px 0 20px 70px; background: url(../img/icon/github.png) no-repeat center left; }
+
 /*
 Media
 */
