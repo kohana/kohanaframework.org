@@ -113,7 +113,7 @@ Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-marg
 Layout and boxes
 */
 
-body { background-color:#cdda9e; background-image:url(../img/headerBkg.png); background-repeat:repeat-x; background-position:left top; padding:0 20px 20px 20px; }
+body { background-color:#cdda9e; background-image:url(../img/headerBkg-2.png); background-repeat:repeat-x; background-position:left top; padding:0 20px 20px 20px; }
 
 /* .wrapper hold all of the content of the site, including header, nav, banner, etc. */
 .wrapper { width:980px; margin:auto; }
