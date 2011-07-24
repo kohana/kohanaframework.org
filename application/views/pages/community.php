@@ -5,10 +5,10 @@
 	<p class="intro">An open source project is nothing without a community.</p>
 
 	<dl>
-		<dt><?php echo HTML::anchor('http://forum.kohanaphp.com/', HTML::image('media/img/community_icon/forum.png', array('alt' => 'Forum'))) ?></dt>
+		<dt><?php echo HTML::anchor('http://forum.kohanaframework.org/', HTML::image('media/img/community_icon/forum.png', array('alt' => 'Forum'))) ?></dt>
 		<dd>
-			<h3><?php echo HTML::anchor('http://forum.kohanaphp.com/', 'Forum') ?></h3>
-			Official announcements, community support, and feedback can be found on our <?php echo HTML::anchor('http://forum.kohanaphp.com/', 'community forum') ?>.
+			<h3><?php echo HTML::anchor('http://forum.kohanaframework.org/', 'Forum') ?></h3>
+			Official announcements, community support, and feedback can be found on our <?php echo HTML::anchor('http://forum.kohanaframework.org/', 'community forum') ?>.
 		</dd>
 
 		<dt><?php echo HTML::anchor('irc://irc.freenode.net/kohana', HTML::image('media/img/community_icon/irc.png', array('alt' => 'IRC'))) ?></dt>
