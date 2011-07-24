@@ -298,7 +298,7 @@ Lists: Community (Homepage)
 #community li:nth-child(3n+1) { padding-left:0; border-left:0; }
 #community li:nth-child(3n) { padding-right:0; border-right:0; }
 #community li:nth-child(3n+2) { width:220px; }
-#community li:last-child { width:437px; border-bottom:0; border-right:0; padding-right:240px; position:relative; }
+/* #community li:last-child { width:437px; border-bottom:0; border-right:0; padding-right:240px; position:relative; }  RETURN WHEN TWITTER INTEGRATED */
 #community li h3 { text-transform:uppercase; letter-spacing:1px; font:bold normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; padding-bottom:6px; }
 
 #community li a.icon { padding-left: 70px; padding-right: 0px; min-height:100px; display:block; background-position: top left; background-repeat: no-repeat; }
