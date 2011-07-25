@@ -80,4 +80,64 @@ class View_Base extends Kostache {
 	{
 		return URL::base();
 	}
+
+	/**
+	 * Returns home page url
+	 *
+	 * @return  string
+	 */
+	public function home_url()
+	{
+		return Route::url('home');
+	}
+
+	/**
+	 * Returns download page url
+	 *
+	 * @return  string
+	 */
+	public function download_url()
+	{
+		return Route::url('download');
+	}
+
+	/**
+	 * Returns documentation page url
+	 *
+	 * @return  string
+	 */
+	public function documentation_url()
+	{
+		return Route::url('documentation');
+	}
+
+	/**
+	 * Returns development page url
+	 *
+	 * @return  string
+	 */
+	public function development_url()
+	{
+		return Route::url('development');
+	}
+
+	/**
+	 * Returns team page url
+	 *
+	 * @return  string
+	 */
+	public function team_url()
+	{
+		return Route::url('team');
+	}
+
+	/**
+	 * Returns license page url
+	 *
+	 * @return  string
+	 */
+	public function license_url()
+	{
+		return Route::url('license');
+	}
 }
