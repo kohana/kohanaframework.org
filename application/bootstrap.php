@@ -119,37 +119,37 @@ Kohana::$expose = TRUE;
  * defaults for the URI.
  */
 
-Route::set('download', 'download.html')
+Route::set('download', 'download')
 	->defaults(array(
 		'controller' => 'download',
 		'action'     => 'index'
 	));
 
-Route::set('documentation', 'documentation.html')
+Route::set('documentation', 'documentation')
 	->defaults(array(
 		'controller' => 'documentation',
 		'action'     => 'index'
 	));
 
-Route::set('development', 'development.html')
+Route::set('development', 'development')
 	->defaults(array(
 		'controller' => 'development',
 		'action'     => 'index'
 	));
 
-Route::set('team', 'team.html')
+Route::set('team', 'team')
 	->defaults(array(
 		'controller' => 'team',
 		'action'     => 'index'
 	));
 
-Route::set('license', 'license.html')
+Route::set('license', 'license')
 	->defaults(array(
 		'controller' => 'license',
 		'action'     => 'index'
 	));
 
-Route::set('home', '(index.html)')
+Route::set('home', '(index)')
 	->defaults(array(
 		'controller' => 'home',
 		'action'     => 'index'
@@ -161,21 +161,21 @@ Route::set('home', '(index.html)')
 // 		'controller' => 'feed',
 // 		'action'     => 'load',
 // 	));
-// 
+//
 // // Handles: download/$file
 // Route::set('file', 'download/<file>', array('file' => '.+'))
 // 	->defaults(array(
 // 		'controller' => 'file',
 // 		'action'     => 'get',
 // 	));
-// 
+//
 // // Handles: donate
 // Route::set('donate', 'donate(/<action>)')
 // 	->defaults(array(
 // 		'controller' => 'donate',
 // 		'action'     => 'index',
 // 	));
-// 
+//
 // // Handles: $lang/$page and $page
 // Route::set('page', '((<lang>/)<page>)', array('lang' => '[a-z]{2}', 'page' => '.+'))
 // 	->defaults(array(
