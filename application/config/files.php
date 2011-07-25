@@ -6,9 +6,9 @@ return array(
 		'codename'      => 'kolibri',
 		'status'        => 'stable',
 		'download'      => 'http://dev.kohanaframework.org/attachments/download/1656/kohana-3.2.0.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=49',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=50',
 		'documentation' => 'http://kohanaframework.org/3.2/guide/',
-		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=48',
+		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=37',
 		'support_until' => 'July, 2012'
 	),
 	'support' => array(

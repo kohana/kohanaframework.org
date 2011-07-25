@@ -39,7 +39,7 @@ class View_Base extends Kostache {
 	public function charset()
 	{
 		return Kohana::$charset;
-	} 
+	}
 
 	/**
 	 * Return the language for the page
@@ -69,5 +69,15 @@ class View_Base extends Kostache {
 	public function stats()
 	{
 		return Kohana::$environment === Kohana::PRODUCTION;
+	}
+
+	/**
+	 * Returns URL::base() in order to link to assets properly
+	 *
+	 * @return  string
+	 */
+	public function base_url()
+	{
+		return URL::base();
 	}
 }

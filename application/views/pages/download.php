@@ -14,7 +14,7 @@
 				<li><?php echo HTML::anchor($version['download'], 'Download', array('class' => 'download')) ?></li>
 				<li><?php echo HTML::anchor($version['changelog'], 'Changes', array('class' => 'changelog')) ?></li>
 				<li><?php echo HTML::anchor($version['documentation'], 'Documentation', array('class' => 'documentation')) ?></li>
-				<li><?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
 			</ul>
 		</div>
 	</div>
@@ -27,7 +27,7 @@
 				<li><?php echo HTML::anchor($version['download'], 'Download', array('class' => 'download')) ?></li>
 				<li><?php echo HTML::anchor($version['changelog'], 'Changes', array('class' => 'changelog')) ?></li>
 				<li><?php echo HTML::anchor($version['documentation'], 'Documentation', array('class' => 'documentation')) ?></li>
-				<li><?php echo HTML::anchor('http://dev.kohanaphp.com/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
+				<li><?php echo HTML::anchor('http://dev.kohanaframework.org/projects/kohana3/issues', 'Issues', array('class' => 'issues')) ?></li>
 			</ul>
 		</div>
 	</div>
