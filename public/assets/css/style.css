@@ -246,6 +246,7 @@ Banner
 */
 #banner { overflow:hidden; padding-bottom:0; }
 #banner h2 { font:bold 30px/34px "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow:0 1px 1px rgba(0,0,0,.2); color:#ffffff; width:560px; float:left; padding-top:12px; }
+#banner h2.error { width: auto; }
 
 .download { width:240px; float:right; margin:30px 0 0 0; }
 .download a { clear:both; display:block; color:#fff; }
@@ -439,3 +440,8 @@ tr, img { page-break-inside: avoid; }
 p, h2, h3 { orphans: 3; widows: 3; }
 h2, h3{ page-break-after: avoid; }
 }
+
+div#error { padding-left: 5em; }
+div#error img#not-found        { display: inline-block; margin-left: auto; margin-right: auto; width: 400px;}
+div#error img#not-found-server { display: inline-block; margin-left: auto; margin-right: auto; width: 400px;}
+div#error img#error-fivehundred { display: inline-block; margin-left: auto; margin-right: auto; width: 850px;}

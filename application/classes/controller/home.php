@@ -9,4 +9,14 @@ class Controller_Home extends Controller {
 		$this->response->body($view);
 	}
 
+	/**
+	 * Demo action to generate a 500 error
+	 *
+	 * @return null
+	 */
+	public function action_error()
+	{
+		throw new Kohana_Exception('This is an intentional exception');
+	}
+
 }
