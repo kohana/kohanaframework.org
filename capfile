@@ -1,0 +1,75 @@
+##########
+# This capfile is intended for use by our CI server!
+# 
+# DO NOT USE MANUALLY
+##########
+load 'deploy'
+
+# Basic settings
+set :application, "kohana-website"
+set :repository, "."
+set :scm, :none
+set :deploy_via, :copy
+set :copy_dir, "/tmp/#{application}/"
+set :user, "kohana"
+set :runner, "kohana"
+set :use_sudo, false
+
+# Stages
+task :production do
+	role :app, "vm01.kohanaframework.org"
+	role :db,  "vm01.kohanaframework.org", {:primary=>true}
+	role :web, "vm01.kohanaframework.org"
+
+	set :deploy_to, "/home/kohana/sites/www.kohanaframework.org/"
+end
+
+task :staging do
+	role :app, "vm01.kohanaframework.org"
+	role :db,  "vm01.kohanaframework.org", {:primary=>true}
+	role :web, "vm01.kohanaframework.org"
+
+	set :deploy_to, "/home/kohana/sites/staging.kohanaframework.org/"
+end
+
+# Workaround a cap bug..
+Dir.mkdir("/tmp/#{application}/") unless File.directory?("/tmp/#{application}/")
+
+# Hooks
+before "deploy:setup", "kohana:before_setup"
+after "deploy:finalize_update", "kohana:finalize_update"
+
+# Kohana specific deployment .. 
+namespace :kohana do
+	task :before_setup, :except => { :no_release => true } do
+		shared_children.push("upload")
+	end
+
+	task :finalize_update, :except => { :no_release => true } do
+		run "rm -rf #{latest_release}/application/logs"
+		run "ln -s #{shared_path}/log #{latest_release}/application/logs"
+
+		run "rm -rf #{latest_release}/upload"
+		run "ln -s #{shared_path}/upload #{latest_release}/upload"
+	end
+end
+
+
+# Override some defaults..
+namespace :deploy do
+	task :finalize_update, :except => { :no_release => true } do
+		run "chmod -R g+w #{latest_release}" if fetch(:group_writable, true)
+	end
+
+	task :restart, :roles => :app, :except => { :no_release => true } do
+		# do nothing
+	end
+
+	task :start, :roles => :app, :except => { :no_release => true } do
+		# do nothing
+	end
+
+	task :stop, :roles => :app, :except => { :no_release => true } do
+		# do nothing
+	end
+end
