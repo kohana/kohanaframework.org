@@ -20,9 +20,9 @@ task :production do
 end
 
 task :staging do
-	role :app, "vm02.kohanaframework.org"
-	role :db,  "vm02.kohanaframework.org", {:primary=>true}
-	role :web, "vm02.kohanaframework.org"
+	role :app, "vm01.kohanaframework.org"
+	role :db,  "vm01.kohanaframework.org", {:primary=>true}
+	role :web, "vm01.kohanaframework.org"
 
 	set :deploy_to, "/home/kohana/sites/staging.kohanaframework.org/"
 end
