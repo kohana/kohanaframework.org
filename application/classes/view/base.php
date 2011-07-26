@@ -140,4 +140,24 @@ class View_Base extends Kostache {
 	{
 		return Route::url('license');
 	}
+	
+	/**
+	 * Returns current kohana version
+	 *
+	 * @return  string
+	 */
+	public function kohana_version()
+	{
+		return Kohana::VERSION;
+	}
+	
+	/**
+	 * Returns current kohana codename
+	 *
+	 * @return  string
+	 */
+	public function kohana_codename()
+	{
+		return Kohana::CODENAME;
+	}
 }
