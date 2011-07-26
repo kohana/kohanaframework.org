@@ -16,6 +16,8 @@ role :app, "vm02.kohanaframework.org"
 role :db,  "vm02.kohanaframework.org", {:primary=>true}
 role :web, "vm02.kohanaframework.org"
 
+Dir.mkdir("/tmp/#{application}/")
+
 # Hooks
 before "deploy:setup", "kohana:before_setup"
 after "deploy:finalize_update", "kohana:finalize_update"
@@ -23,13 +25,12 @@ after "deploy:finalize_update", "kohana:finalize_update"
 # Kohana specific deployment .. 
 namespace :kohana do
 	task :before_setup, :except => { :no_release => true } do
-		shared_children.push("logs")
 		shared_children.push("upload")
 	end
 
 	task :finalize_update, :except => { :no_release => true } do
 		run "rm -rf #{latest_release}/application/logs"
-		run "ln -s #{shared_path}/logs #{latest_release}/application/logs"
+		run "ln -s #{shared_path}/log #{latest_release}/application/logs"
 
 		run "rm -rf #{latest_release}/upload"
 		run "ln -s #{shared_path}/upload #{latest_release}/upload"
