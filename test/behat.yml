@@ -21,4 +21,4 @@ test-master:
 local:
   context:
     parameters:
-      base_url: http://kohanaphpcom/
+      base_url: http://kohana.local/
