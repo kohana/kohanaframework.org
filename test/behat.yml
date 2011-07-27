@@ -1,0 +1,14 @@
+default:
+  context:
+    parameters:
+      base_url: http://staging.kohanaframework.org/
+
+production:
+  context:
+    parameters:
+      base_url: http://kohanaframework.org/
+
+local:
+  context:
+    parameters:
+      base_url: http://kohanaphpcom/
