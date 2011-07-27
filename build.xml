@@ -1,7 +1,7 @@
 <project name="KohanaWebsite" default="behat" basedir=".">
 	<target name="behat">
 		<exec dir="${basedir}/test" executable="behat" failonerror="true">
-			<arg line="-f junit --out ${basedir}/test/logs --profile default" />
+			<arg line="-f junit --out ${basedir}/test/logs --profile test" />
 		</exec>
 	</target>
 </project>

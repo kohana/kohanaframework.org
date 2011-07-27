@@ -8,6 +8,11 @@ production:
     parameters:
       base_url: http://kohanaframework.org/
 
+test:
+  context:
+    parameters:
+      base_url: http://test.kohanaframework.org/
+
 local:
   context:
     parameters:
