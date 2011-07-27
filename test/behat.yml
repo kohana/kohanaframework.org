@@ -8,10 +8,15 @@ production:
     parameters:
       base_url: http://kohanaframework.org/
 
-test:
+test-develop:
   context:
     parameters:
-      base_url: http://test.kohanaframework.org/
+      base_url: http://kohana-website-develop.ci.kohanaframework.org/
+
+test-master:
+  context:
+    parameters:
+      base_url: http://kohana-website-master.ci.kohanaframework.org/
 
 local:
   context:
