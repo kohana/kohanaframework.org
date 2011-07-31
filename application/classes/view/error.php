@@ -8,6 +8,7 @@ class View_Error extends View_Base {
 	protected $_partials = array(
 		'header'   => 'partials/header',
 		'footer'   => 'partials/footer',
+		'notices'  => 'partials/notices',
 		'banner'   => 'partials/error/banner',
 	);
 

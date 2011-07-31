@@ -8,6 +8,7 @@ class View_Team extends View_Base {
 	protected $_partials = array(
 		'header'   => 'partials/header',
 		'footer'   => 'partials/footer',
+		'notices'  => 'partials/notices',
 	);
 
 	/**
