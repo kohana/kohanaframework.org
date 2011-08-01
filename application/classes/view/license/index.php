@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_Download extends View_Base {
+class View_License_Index extends Kostache_Layout {
 
 	/**
 	 * @var     array    partials for the page
@@ -15,20 +15,4 @@ class View_Download extends View_Base {
 	 * @var     boolean   show the banner space on template
 	 */
 	public $banner_exists = FALSE;
-
-	/**
-	 * @var     boolean   triggers the menu bar highlight
-	 */
-	public $menu_download = TRUE;
-
-
-	public function body()
-	{
-		$body = new View_Download_Body; 
-
-		$body->set('download', $this->download);
-
-		return $body;
-	}
-
 }

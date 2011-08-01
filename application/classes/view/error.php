@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_Error extends View_Base {
+abstract class View_Error extends Kostache_Layout {
 
 	/**
 	 * @var     array    partials for the page
@@ -19,10 +19,5 @@ class View_Error extends View_Base {
 
 	public $message;
 
-	public function body()
-	{
-		$class = 'View_Error_'.((int)$this->type);
-		return new $class; 
-	}
-
+	public $type;
 }

@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_License extends View_Base {
+class View_Development_Index extends Kostache_Layout {
 
 	/**
 	 * @var     array    partials for the page
@@ -16,12 +16,19 @@ class View_License extends View_Base {
 	 */
 	public $banner_exists = FALSE;
 
-	public function body()
-	{
-		$body = new View_License_Body; 
-		$body->set('year', $this->year());
+	/**
+	 * @var     boolean   triggers the menu bar highlight
+	 */
+	public $menu_development = TRUE;
 
-		return $body;
+	/**
+	 * Returns team page url
+	 *
+	 * @return  string
+	 */
+	public function team_url()
+	{
+		return Route::url('team');
 	}
 
 }

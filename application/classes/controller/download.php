@@ -6,11 +6,10 @@ class Controller_Download extends Controller {
 	{
 		$download = Kohana::$config->load('files');
 
-		$view = new View_Download;
+		$view = new View_Download_Index;
 		$view->set('download', $download)
 			->set('title', 'Download Kohana');
 
 		$this->response->body($view);
 	}
-
 }
