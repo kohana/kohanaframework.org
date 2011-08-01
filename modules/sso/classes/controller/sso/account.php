@@ -70,7 +70,8 @@ class Controller_Sso_Account extends Controller {
 			}
 			catch (ORM_Validation_Exception $e)
 			{
-				$errors = $e->errors('model');
+				Notice::add(Notice::ERROR, 'Validation failed. Please correct the errors and retry.');
+				$errors = $e->errors('sso/model');
 			}
 		}
 		
@@ -107,6 +108,8 @@ class Controller_Sso_Account extends Controller {
 				// Attempt to login...
 				if ($this->_auth->login($user, $this->request->post('password')))
 				{
+					$user = $this->_auth->get_user();
+					
 					// Login Succcess - Redirect the user ..
 					$this->_redirect();
 				}
@@ -180,7 +183,8 @@ class Controller_Sso_Account extends Controller {
 			}
 			catch (ORM_Validation_Exception $e)
 			{
-				$errors = $e->errors('model');
+				Notice::add(Notice::ERROR, 'Validation failed. Please correct the errors and retry.');
+				$errors = $e->errors('sso/model');
 			}
 		}
 		

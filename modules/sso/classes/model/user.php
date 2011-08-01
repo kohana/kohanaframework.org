@@ -25,7 +25,13 @@ class Model_User extends Model_Auth_User {
 	{
 		$this->code = Text::random('alnum', 50);
 		
-		return parent::create_user($values, $expected);
+		$user = parent::create_user($values, $expected);
+		
+		Email::factory('sso/register')
+			->to($user->email, $user->first_name.'_'.$user->last_name, array('code' => $user->code))
+			->send();
+		
+		return $user;
 	}
 	
 	public function rules()

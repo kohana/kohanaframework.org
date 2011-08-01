@@ -2,14 +2,9 @@
 
 class Controller_Sso_Redmine extends Controller {
 
-	public function action_index()
-	{
-		// Needed ..
-	}
-	
 	public function action_present()
 	{
-		$username = $this->request->param('username'); //$auth = Auth::instance();
+		$username = $this->request->param('username');
 		
 		$user = ORM::factory('user', array(
 			'username' => $username,

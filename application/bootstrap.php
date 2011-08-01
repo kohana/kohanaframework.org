@@ -109,10 +109,13 @@ Kohana::modules(array(
 	//'pagination'              => MODPATH.'pagination',                  // Paging of results
 	//'userguide'               => MODPATH.'userguide',                   // User guide and API documentation
 	'kostache'                => MODPATH.'kostache',                   // Kostache templating
+	'kostache-email'          => MODPATH.'kostache-email',             // Kostache based email
 	'minion'                  => MODPATH.'minion',                     // Minion CLI
 	'minion-tasks-migrations' => MODPATH.'minion-tasks-migrations',    // Minion Migrations
+	'minion-tasks-cache'      => MODPATH.'minion-tasks-cache',         // Minion Cache management
+	'notices'                 => MODPATH.'notices',                    // Notifications
 	));
-Database::instance();
+
 /*
  * We want to show the world we're running on... Kohana of course!
  */

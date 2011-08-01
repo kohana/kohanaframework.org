@@ -22,5 +22,8 @@ fi
 
 php public/index.php --uri=minion "$TASK" "$@"
 
+# Since we add the \n before Minion_CLI::write calls, we need to ensure an extra newline is sent before exiting
+echo 
+
 # Pass the exit code back out
 exit $?

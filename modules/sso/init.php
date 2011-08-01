@@ -1,10 +1,10 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-Route::set('sso_redmine_present', 'sso/redmine/accounts/<username>/present.xml')
+Route::set('sso_redmine', 'sso/redmine(/<action>(/<username>))')
 	->defaults(array(
 		'directory'  => 'sso',
 		'controller' => 'redmine',
-		'action'     => 'present',
+		'action'     => 'login',
 	));
 
 Route::set('sso_redmine_login', 'sso/redmine/login.xml')

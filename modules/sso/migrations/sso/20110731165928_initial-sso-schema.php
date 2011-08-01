@@ -1,4 +1,6 @@
-<?php defined('SYSPATH') or die('No direct script access.');/**
+<?php defined('SYSPATH') or die('No direct script access.');
+
+/**
  * Initial SSO Schema
  */
 class Migration_Sso_20110731165928 extends Minion_Migration_Base {

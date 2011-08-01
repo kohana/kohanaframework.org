@@ -369,9 +369,11 @@ form ol { margin:0; }
 form li { list-style:none; margin-bottom:12px; }
 form label { clear:both; display:block; }
 form input[type="text"],
+form input[type="password"],
 form input[type="email"],
 form textarea { font:12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; border:1px solid #E5E3D3; padding:4px; }
 form input[type="text"]:focus,
+form input[type="password"]:focus,
 form input[type="email"]:focus,
 form textarea:focus { border:1px solid #254241; }
 input[type="submit"] { border:1px solid #b37921; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; padding:4px 10px; background:#d6770c; background-image:-webkit-gradient(linear, left top, left bottom, from(#f5bf13), to(#d6770c)); background-image:-moz-linear-gradient(-90deg,#f5bf13,#d6770c); line-height:1.3; color:#ffffff; font-weight:bold; text-shadow:0 1px 1px rgba(0,0,0,.2); font-size:120%; }
