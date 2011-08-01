@@ -1,25 +1,37 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_SSO_Account_Login extends View_Base {
-
-	/**
-	 * @var     boolean   show the banner space on template
-	 */
-	public $banner_exists = FALSE;
-
+class View_SSO_Account_Login extends Kostache_Layout {
 	/**
 	 * @var     boolean   triggers the menu bar highlight
 	 */
 	public $menu_sso = TRUE;
 
-	public function body()
+	/**
+	 * @var string The email address of the last attemped login
+	 */
+	public $email = NULL;
+
+	/**
+	 * Retruns the login form post_url
+	 *
+	 * @return string
+	 */
+	public function post_url()
 	{
-		// Proxy until Kostache_Layout is used ;)
-		$body = new View_SSO_Account_Login_Body();
-		
-		$body->set('email', $this->email);
-		
-		return $body;
+		return Route::url('sso_account', array(
+			'action' => 'login',
+		), TRUE);
 	}
 
+	/**
+	 * Retruns the registration URL
+	 *
+	 * @return string
+	 */
+	public function register_url()
+	{
+		return Route::url('sso_account', array(
+			'action' => 'register',
+		), TRUE);
+	}
 }
