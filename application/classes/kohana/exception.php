@@ -13,21 +13,21 @@ class Kohana_Exception extends Kohana_Kohana_Exception
 	public static function handler(Exception $e)
 	{	
 		$response = new Response;
-		$view = new View_Error;
-		$view->message = $e->getMessage();
 
 		switch (get_class($e))
 		{
 			case 'HTTP_Exception_404':
+				$view = new View_Error_404;
+				$view->message = $e->getMessage();
 				$response->status(404);
 				$view->title = 'File Not Found';
-				$view->type = 404;
 
 				break;
 			default:
+				$view = new View_Error_500;
+				$view->message = $e->getMessage();
 				$response->status(500);
 				$view->title = 'NOMNOMNOMN';
-				$view->type = 500;
 	
 				break;
 		}

@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_Base extends Kostache {
+class Kostache extends Kohana_Kostache {
 
 	/**
 	 * @var     array    partials for the page
@@ -10,11 +10,6 @@ class View_Base extends Kostache {
 		'footer'   => 'partials/footer',
 		'notices'  => 'partials/notices',
 	);
-
-	/**
-	 * @var     string    overloading the template to lock to base
-	 */
-	protected $_template = 'base';
 
 	/**
 	 * @var     string    title of the site

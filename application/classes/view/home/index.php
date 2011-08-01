@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_Home extends View_Base {
-
+class View_Home_Index extends Kostache_Layout
+{
 	/**
 	 * @var     array    partials for the page
 	 */
@@ -10,6 +10,10 @@ class View_Home extends View_Base {
 		'footer'   => 'partials/footer',
 		'notices'  => 'partials/notices',
 		'banner'   => 'partials/home/banner',
+		'features' => 'home/features',
+		'gallery'  => 'home/gallery',
+		'social'   => 'home/social',
+		'whouses'  => 'home/whouses',
 	);
 
 	/**
@@ -31,10 +35,4 @@ class View_Home extends View_Base {
 	{
 		return $this->download['download'];
 	}
-
-	public function body()
-	{
-		return new View_Home_Body;
-	}
-
 }
