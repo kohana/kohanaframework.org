@@ -13,3 +13,18 @@
 [submodule "modules/kostache"]
 	path = modules/kostache
 	url = https://github.com/zombor/KOstache.git
+[submodule "modules/database"]
+	path = modules/database
+	url = https://github.com/kohana/database.git
+[submodule "modules/auth"]
+	path = modules/auth
+	url = https://github.com/kohana/auth.git
+[submodule "modules/minion"]
+	path = modules/minion
+	url = https://github.com/kohana-minion/core.git
+[submodule "modules/minion-tasks-migrations"]
+	path = modules/minion-tasks-migrations
+	url = https://github.com/kohana-minion/tasks-migrations.git
+[submodule "modules/orm"]
+	path = modules/orm
+	url = http://github.com/kohana/orm.git

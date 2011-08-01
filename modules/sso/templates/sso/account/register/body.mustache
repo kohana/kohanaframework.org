@@ -1,0 +1,31 @@
+<section class="textHeavy">
+	<h1>Register</h1>
+	<form method="post" action="{{post_url}}">
+		<label for="user[username]">Username:</label>
+		<input type="text" name="user[username]" value="{{#user}}{{username}}{{/user}}"/>
+		{{#errors}}{{username}}{{/errors}}<br/>
+
+		<label for="user[first_name]">First Name:</label>
+		<input type="text" name="user[first_name]" value="{{#user}}{{first_name}}{{/user}}"/>
+		{{#errors}}{{first_name}}{{/errors}}<br/>
+
+		<label for="user[last_name]">Last Name:</label>
+		<input type="text" name="user[last_name]" value="{{#user}}{{last_name}}{{/user}}"/>
+		{{#errors}}{{last_name}}{{/errors}}<br/>
+
+		<label for="user[email]">Email:</label>
+		<input type="text" name="user[email]" value="{{#user}}{{email}}{{/user}}"/>
+		{{#errors}}{{email}}{{/errors}}<br/>
+
+		<label for="user[password]">Password:</label>
+		<input type="password" name="user[password]"/>
+		{{#errors}}{{#_external}}{{password}}{{/_external}}{{/errors}}<br/>
+
+		<label for="user[password_confirm]">Password Again:</label>
+		<input type="password" name="user[password_confirm]"/>
+		{{#errors}}{{#_external}}{{password_confirm}}{{/_external}}{{/errors}}<br/>
+
+		<input type="submit" value="Register"/>
+	</form>
+    <p>Already have an account? <a href="{{login_url}}">Login</a></p>
+</section>
