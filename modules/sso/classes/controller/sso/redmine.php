@@ -34,7 +34,7 @@ class Controller_Sso_Redmine extends Controller {
 		}
 		else
 		{
-			$this->response->status(500);
+			$this->response->status(401);
 		}
 
 
