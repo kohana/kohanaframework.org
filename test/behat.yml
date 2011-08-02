@@ -1,6 +1,11 @@
 default:
   context:
     parameters:
+      base_url: http://kohana.local/
+
+staging:
+  context:
+    parameters:
       base_url: http://staging.kohanaframework.org/
 
 production:
@@ -17,8 +22,3 @@ test-master:
   context:
     parameters:
       base_url: http://kohana-website-master.ci.kohanaframework.org/
-
-local:
-  context:
-    parameters:
-      base_url: http://kohana.local/
