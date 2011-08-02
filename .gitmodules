@@ -34,3 +34,6 @@
 [submodule "modules/kostache-email"]
 	path = modules/kostache-email
 	url = http://github.com/kiall/kostache-email.git
+[submodule "modules/unittest"]
+	path = modules/unittest
+	url = http://github.com/kohana/unittest.git
