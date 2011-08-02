@@ -1,42 +1,35 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class View_Email_SSO_Register extends Kostache {
+class View_Email_SSO_Register extends Kostache_Email {
 
 	/**
 	 * @var string Message Subject
 	 */
-	public $subject = "Your kohanaframework.org registration";
+	protected $_subject = 'Your kohanaframework.org registration';
 
 	/**
-	 * @var string Message From Name
+	 * @var string Sender Name
 	 */
-	public $from_name = "Kohana";
+	protected $_sender_name = 'Kohana';
 
 	/**
-	 * @var string Message From Address
+	 * @var string Sender email email
 	 */
-	public $from_address = "noreply@kohanaframework.org";
+	protected $_sender_email = 'noreply@kohanaframework.org';
 
 	/**
-	 * @var string Message From Address
+	 * @var string Reply-To email
 	 */
-	public $reply_to = "noreply@kohanaframework.org";
-
+	protected $_reply_to = 'noreply@kohanaframework.org';
+	
 	/**
 	 * @return string Bounces Email Address
 	 */
 	public function return_path()
 	{
-		return 'bounces+'.$this->code.'@kohanaframework.org';
+		return 'bounces+'.$this->message_id.'@kohanaframework.org';
 	}
-
-	/**
-	 * @var array SMTP Headers
-	 */
-	public $headers = array(
-		'Auto-Submitted' => 'auto-generated', // See http://tools.ietf.org/html/rfc3834#section-5
-	);
-
+	
 	/**
 	 * Retruns the verification URL
 	 *
@@ -47,10 +40,5 @@ class View_Email_SSO_Register extends Kostache {
 		return Route::url('sso_account', array(
 			'action' => 'verify',
 		), TRUE).'?code='.$this->code;
-	}
-
-	public function __get($name)
-	{
-		return $this->{$name}();
 	}
 }

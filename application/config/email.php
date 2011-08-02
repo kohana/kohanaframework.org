@@ -26,13 +26,4 @@ return array(
 	 * @param   array   smtp: hostname, (username), (password), (port), (encryption)
 	 */
 	'options' => NULL,
-	
-	/**
-	 * Where to send bounces .. eg array('user' => 'bounces', 'domain' => 'kohanaframework.org', 'include_code' => TRUE)
-	 */
-	'return_path' => array(
-		'user' => 'bounces',
-		'domain' => 'kohanaframework.org',
-		'include_code' => TRUE,
-	),
 );

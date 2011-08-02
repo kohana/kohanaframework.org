@@ -76,7 +76,7 @@ class Controller_Sso_Account extends Controller {
 		}
 		
 		// Prepare the my account view
-		$view = Kostache::factory('sso/account')
+		$view = Kostache::factory('sso/account/index')
 		    ->set('title', 'Kohana SSO')
 		    ->set('description', 'Kohana SSO')
 		    ->set('user', $this->_auth->get_user())
