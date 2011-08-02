@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 class View_Email_SSO_Register extends Kostache_Email {
-
+ 
 	/**
 	 * @var string Message Subject
 	 */
@@ -21,7 +21,7 @@ class View_Email_SSO_Register extends Kostache_Email {
 	 * @var string Reply-To email
 	 */
 	protected $_reply_to = 'noreply@kohanaframework.org';
-	
+
 	/**
 	 * @return string Bounces Email Address
 	 */
@@ -29,7 +29,7 @@ class View_Email_SSO_Register extends Kostache_Email {
 	{
 		return 'bounces+'.$this->message_id.'@kohanaframework.org';
 	}
-	
+
 	/**
 	 * Retruns the verification URL
 	 *

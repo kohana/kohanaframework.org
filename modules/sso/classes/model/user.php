@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') or die('No direct access allowed.');
 
 class Model_User extends Model_Auth_User {
-	
-	/**
+
+	/** 
 	 * Auto-update columns for updates
 	 * @var array
 	 */
@@ -19,31 +19,31 @@ class Model_User extends Model_Auth_User {
 		'column' => 'created',
 		'format' => TRUE,
 	);
-	
+
 	/**
 	 * Insert a new object to the database.
-	 * 
+	 *
 	 * Overloaded to trigger SSO tasks.
-	 * 
+	 *
 	 * @param  Validation $validation Validation object
 	 * @return ORM
 	 */
 	public function create(Validation $validation = NULL)
 	{
 		$this->code = Text::random('alnum', 50);
-		
+
 		$user = parent::create($validation);
-		
+
 		Email::factory('sso/register')
 			->to($user->email, $user->first_name.' '.$user->last_name, array('code' => $user->code))
 			->send();
-		
+
 		return $user;
 	}
-	
+
 	/**
 	 * Updates a single record or multiple records
-	 * 
+	 *
 	 * Overloaded to trigger SSO tasks.
 	 *
 	 * @chainable
@@ -58,10 +58,10 @@ class Model_User extends Model_Auth_User {
 			 * @todo Verify new email addresses..
 			 */
 		}
-		
+
 		return parent::update($validation);
 	}
-	
+
 	public function rules()
 	{
 		return parent::rules() + array(

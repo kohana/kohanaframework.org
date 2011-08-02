@@ -6,7 +6,7 @@ class View_SSO_Account_Register extends Kostache_Layout {
 	 */
 	public $menu_sso = TRUE;
 
-	/**
+	/** 
 	 * @var string The email address of the last attemped login
 	 */
 	public $email = NULL;

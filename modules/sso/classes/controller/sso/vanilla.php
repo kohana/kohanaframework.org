@@ -3,9 +3,9 @@
 class Controller_Sso_Vanilla extends Controller {
 
 	public function action_proxyconnect()
-	{
+	{ 
 		$auth = Auth::instance();
-		
+
 		if ($auth->logged_in())
 		{
 			$this->response->body(View::factory('sso/vanilla/proxyconnect', array(

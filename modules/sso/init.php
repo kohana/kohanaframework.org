@@ -6,7 +6,7 @@ Route::set('sso_redmine', 'sso/redmine(/<action>(/<username>))')
 		'controller' => 'redmine',
 		'action'     => 'login',
 	));
-
+ 
 Route::set('sso_redmine_login', 'sso/redmine/login.xml')
 	->defaults(array(
 		'directory'  => 'sso',

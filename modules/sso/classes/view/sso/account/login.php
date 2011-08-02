@@ -3,7 +3,7 @@
 class View_SSO_Account_Login extends Kostache_Layout {
 	/**
 	 * @var     boolean   triggers the menu bar highlight
-	 */
+	 */ 
 	public $menu_sso = TRUE;
 
 	/**

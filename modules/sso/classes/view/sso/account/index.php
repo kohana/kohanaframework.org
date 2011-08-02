@@ -4,7 +4,7 @@ class View_SSO_Account_Index extends Kostache_Layout {
 	/**
 	 * @var     boolean   triggers the menu bar highlight
 	 */
-	public $menu_sso = TRUE;
+	public $menu_sso = TRUE; 
 
 	/**
 	 * @var string The email address of the last attemped login
