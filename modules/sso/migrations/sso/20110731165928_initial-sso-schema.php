@@ -4,7 +4,7 @@
  * Initial SSO Schema
  */
 class Migration_Sso_20110731165928 extends Minion_Migration_Base {
-	/** 
+	/**
 	 * Run queries needed to apply this migration
 	 *
 	 * @param Kohana_Database Database connection
@@ -32,6 +32,7 @@ class Migration_Sso_20110731165928 extends Minion_Migration_Base {
 		$db->query(NULL, 'CREATE TABLE `users` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `email` varchar(254) NOT NULL,
+  `email_new` varchar(254) DEFAULT NULL,
   `username` varchar(32) NOT NULL DEFAULT \'\',
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,

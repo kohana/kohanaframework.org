@@ -236,6 +236,56 @@ class Controller_Sso_Account extends Controller {
 		$this->_redirect(TRUE);
 	}
 
+	public function action_verifyemail()
+	{
+		$code = $this->request->query('code');
+
+		// Ensure a code has been supplied
+		if ($code === NULL)
+		{
+			Notice::add(Notice::ERROR, "Invalid verification code");
+
+			$this->_redirect(TRUE);
+		}
+
+		try
+		{
+			// Find the user record for this code
+			$user = ORM::factory('user', array(
+				'code' => $code,
+			));
+
+			// Ensure a user was found
+			if ( ! $user->loaded())
+			{
+				Notice::add(Notice::ERROR, "Invalid verification code");
+
+				$this->_redirect(TRUE);
+			}
+
+			$user->email = $user->email_new;
+			$user->email_new = NULL;
+
+			$user->code = NULL;
+
+			$user->save();
+
+			Notice::add(Notice::SUCCESS, "Verification sucessful. Please login.");
+		}
+		catch (ORM_Validation_Exception $e)
+		{
+			/**
+			 * @todo We should probably check for duplicate email errors here and handle those gracefully.
+			 */
+			
+			Kohana::$log->add(Log::ERROR, 'Validation failed while verifying new email address for user id \''.$user->id.'\'');
+
+			Notice::add(Notice::ERROR, 'Validation failed. Please contact team@kohanaframework.org with your account details to fix this issue.');
+		}
+
+		$this->_redirect(TRUE);
+	}
+
 	protected function _redirect($force_default = FALSE)
 	{
 		$redirect_url = NULL;
