@@ -246,6 +246,7 @@ Banner
 */
 #banner { overflow:hidden; padding-bottom:0; }
 #banner h2 { font:bold 30px/34px "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow:0 1px 1px rgba(0,0,0,.2); color:#ffffff; width:560px; float:left; padding-top:12px; }
+#banner h2.error { width: auto; }
 
 .download { width:240px; float:right; margin:30px 0 0 0; }
 .download a { clear:both; display:block; color:#fff; }
@@ -337,11 +338,11 @@ Download
 */
 
 li.lcta { list-style-type: none; list-style-position: outside; margin: 10px 0px; padding:0px; }
-li.lcta.dl a { background:url(../img/icon/package_go.png) no-repeat left center; padding-left: 25px; }
-li.lcta.changes a { background: url(../img/icon/wrench.png) no-repeat left center; padding-left: 25px; }
-li.lcta.issues a { background: url(../img/icon/bug.png) no-repeat left center; padding-left: 25px; }
-li.lcta.documentation a { background: url(../img/icon/book_link.png) no-repeat left center; padding-left: 25px; }
-li.lcta.documentation.current a { background: url(../img/icon/book_link.png) no-repeat left center; padding-left: 25px; font-size: 16px; }
+li.lcta.dl a { background:url(../img/icon/famfamfam/package_go.png) no-repeat left center; padding-left: 25px; }
+li.lcta.changes a { background: url(../img/icon/famfamfam/wrench.png) no-repeat left center; padding-left: 25px; }
+li.lcta.issues a { background: url(../img/icon/famfamfam/bug.png) no-repeat left center; padding-left: 25px; }
+li.lcta.documentation a { background: url(../img/icon/famfamfam/book_link.png) no-repeat left center; padding-left: 25px; }
+li.lcta.documentation.current a { background: url(../img/icon/famfamfam/book_link.png) no-repeat left center; padding-left: 25px; font-size: 16px; }
 
 /*
 Documentation
@@ -439,3 +440,46 @@ tr, img { page-break-inside: avoid; }
 p, h2, h3 { orphans: 3; widows: 3; }
 h2, h3{ page-break-after: avoid; }
 }
+
+div#error { padding-left: 5em; }
+div#error img#not-found        { display: inline-block; margin-left: auto; margin-right: auto; width: 400px;}
+div#error img#not-found-server { display: inline-block; margin-left: auto; margin-right: auto; width: 400px;}
+div#error img#error-fivehundred { display: inline-block; margin-left: auto; margin-right: auto; width: 850px;}
+
+/*
+ * Notices
+ */
+div.notice {
+	padding: 5px 5px;
+	padding-left: 25px;
+	margin: 5px 0px;
+	
+	/* Rounded Corners and Shadow */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	/* Shadow */
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+div.notice-error {
+	background: #ff0000 url(../img/icon/famfamfam/exclamation.png) no-repeat 5px center;
+}
+
+div.notice-warning {
+	background: #ffff00 url(../img/icon/famfamfam/error.png) no-repeat 5px center;
+}
+
+div.notice-information {
+	background: #0000ff url(../img/icon/famfamfam/information.png) no-repeat 5px center;
+}
+
+div.notice-success {
+	background: #00ff00 url(../img/icon/famfamfam/accept.png) no-repeat 5px center;
+}
+/*
+ * END Notices
+ */

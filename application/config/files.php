@@ -15,7 +15,7 @@ return array(
 		'version'       => 'v3.1.4',
 		'codename'      => 'vespertinus',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1669/kohana-3.1.4.zip',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1671/kohana-3.1.4.zip',
 		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=45',
 		'documentation' => 'http://kohanaframework.org/3.1/guide/',
 		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=53',
