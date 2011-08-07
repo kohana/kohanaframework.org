@@ -11,7 +11,7 @@ class Kohana_Exception extends Kohana_Kohana_Exception
 	 * @return  boolean
 	 */
 	public static function handler(Exception $e)
-	{	
+	{
 		$response = new Response;
 
 		switch (get_class($e))
@@ -23,12 +23,19 @@ class Kohana_Exception extends Kohana_Kohana_Exception
 				$view->title = 'File Not Found';
 
 				break;
+			case 'HTTP_Exception_401':
+				$view = new View_Error_401;
+				$view->message = $e->getMessage();
+				$response->status(401);
+				$view->title = 'Unauthorized';
+
+				break;
 			default:
 				$view = new View_Error_500;
 				$view->message = $e->getMessage();
 				$response->status(500);
 				$view->title = 'NOMNOMNOMN';
-	
+
 				break;
 		}
 

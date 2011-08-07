@@ -167,6 +167,12 @@ Route::set('home', '(index)')
 		'action'     => 'index'
 	));
 
+Route::set('admin', 'admin/<controller>(/<action>(/<id>))')
+	->defaults(array(
+		'directory'  => 'admin',
+		'action'     => 'index'
+	));
+
 // // Handles: feed/$type.rss and feed/$type.atom
 // Route::set('feed', 'feed/<name>', array('name' => '.+'))
 // 	->defaults(array(
