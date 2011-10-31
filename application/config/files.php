@@ -13,7 +13,7 @@ return array(
 	),
 	'support' => array(
 		'version'       => 'v3.1.4',
-		'codename'      => 'vespertinus',
+		'codename'      => 'fasciinucha',
 		'status'        => 'stable',
 		'download'      => 'http://dev.kohanaframework.org/attachments/download/1671/kohana-3.1.4.zip',
 		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=45',

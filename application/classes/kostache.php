@@ -108,6 +108,16 @@ class Kostache extends Kohana_Kostache {
 	}
 
 	/**
+	 * Returns donate page url
+	 *
+	 * @return  string
+	 */
+	public function donate_url()
+	{
+		return Route::url('donate');
+	}
+
+	/**
 	 * Returns development page url
 	 *
 	 * @return  string

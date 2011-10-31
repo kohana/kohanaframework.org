@@ -155,6 +155,12 @@ Route::set('license', 'license')
 		'action'     => 'index'
 	));
 
+	Route::set('donate', 'donate')
+		->defaults(array(
+			'controller' => 'donate',
+			'action'     => 'index'
+		));
+
 Route::set('home', '(index)')
 	->defaults(array(
 		'controller' => 'home',

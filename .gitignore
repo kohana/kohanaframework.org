@@ -2,3 +2,5 @@ Icon?
 .DS_Store
 .svn
 /nbproject/private
+*~
+*.bak
