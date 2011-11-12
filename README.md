@@ -10,6 +10,6 @@ The "master" branch of this repository will be automatically deployed to http://
 # 3rd Party Credits
 
 * [FamFamFam Silk v1.3 icon set](www.famfamfam.com/lab/icons/silk/)
-* [HTML5 Boilerplace](http://html5boilerplate.com/)
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
 
 Let us know if we missed anything :)
