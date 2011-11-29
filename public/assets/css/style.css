@@ -131,9 +131,8 @@ footer { padding:17px 20px; }
 .container>section:first-child { min-height:320px; }
 
 /* Homepage boxes */
-#who, #gallery { height:220px; }
-#who { width:280px; float:left; }
-#gallery { width:620px; float:right; position:relative; }
+#who { height: 220px; width:280px; float:left; }
+#gallery { height:254px; width:660px; float:right; position:relative; overflow: hidden; }
 #social { clear:both; }
 #community { width:700px; float:left; }
 #giving { width:200px; float:right; }
@@ -277,15 +276,21 @@ Lists: Features (Homepage)
 /*
 Lists: Who (Homepage)
 */
-#who ul { margin:0; overflow:hidden; }
-#who li { list-style:none; display:inline; margin:0 9px; }
-#who img { vertical-align:middle; margin-bottom:17px; }
+#who div#whoGallery { margin:0; overflow:hidden; width: 280px; height: 100px }
+#who img { vertical-align:middle; padding-bottom:40px; }
 
+#who p { margin-top: 20px }
 #who a:link, #who a:visited { color:#e7da49; }
 
 /*
 Lists: Gallery (Homepage)
 */
+#gallery { padding: 0px; margin: 0px; }
+#gallery h2 { display: block; overflow: hidden; height: 0; width: 0; padding: 0; margin: 0 }
+#gallery div.information { position: absolute; display: block; background: rgba(20,40,20,0.6); width: 635px; top: 255px; height: 50px; padding-left: 25px; padding-top: 25px; padding-bottom: 0px; }
+#gallery .information h3 { padding: 0; margin: 0; font-size: 25px; float: left }
+#gallery .information a { color: rgb(210, 220, 190); float: left; margin: 10px; font:italic 14px Georgia, "Times New Roman", Times, serif; font-weight: 100; }
+#gallery .information a:hover { text-decoration: none;}
 .sliderContent ul { margin:0; }
 .sliderContent li { float:left; width:200px; height:168px; /* When tweaking the height to accommodate taller screengrabs, make sure to also edit the height of both #who and #gallery containers */ overflow:hidden; list-style:none; -moz-box-shadow:0 3px 2px rgba(0,0,0,.3); margin-right:10px; }
 .sliderContent li:last-child { margin-right:0; }
@@ -482,4 +487,26 @@ div.notice-success {
 }
 /*
  * END Notices
+ */
+
+/*
+ * Pagodabox
+ */
+div#pagodabox {
+	height: 100px;
+}
+
+div#pagodabox a {
+	display: block;
+	overflow: hidden;
+	background: url(../img/pagodaFloat.png) no-repeat;
+	width: 104px;
+	height: 0px;
+	padding-top: 54px;
+	margin-top: 25px;
+	float: right;
+}
+
+/*
+ * END Pagodabox
  */
