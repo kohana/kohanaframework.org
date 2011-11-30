@@ -16,3 +16,12 @@
 [submodule "modules/gallery/vendor/slides"]
 	path = modules/gallery/vendor/slides
 	url = git://github.com/nathansearles/Slides.git
+[submodule "guides/3.0"]
+	path = guides/3.0
+	url = https://github.com/kohana/kohana.git
+[submodule "guides/3.1"]
+	path = guides/3.1
+	url = https://github.com/kohana/kohana.git
+[submodule "guides/3.2"]
+	path = guides/3.2
+	url = https://github.com/kohana/kohana.git

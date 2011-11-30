@@ -14,5 +14,13 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
+# Rewrite for the guides
+RewriteRule ^([\d\.]+)/(guide.*) $1-index.php/$2 [QSA,L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^([\d\.]+)/(guide.*)
+
 # Rewrite all other URLs to index.php/URL
-RewriteRule .* index.php/$0 [PT]
+RewriteRule .* index.php/$0 [QSA,L]
