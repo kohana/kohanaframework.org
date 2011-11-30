@@ -1,0 +1,7 @@
+--- 
+web1: 
+  document_root: /public/
+  name: www-kohanaframework
+  shared_writable_dirs: 
+    - application/cache
+    - application/logs
