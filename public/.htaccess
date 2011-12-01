@@ -14,12 +14,12 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www.kohanaframework.org$ [NC]
 RewriteRule ^(.*)$ http://kohanaframework.org/$1 [R=301,L]
 
+# Redirect from /guide/ to /3.0/guide/
+RewriteRule ^guide.* /3.0/guide/$1 [R=301,L]
+
 # Allow any files or directories that exist to be displayed directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-# Rewrite /guide/ to /3.0/guide/
-RewriteRule ^guide.* /3.0/guide/$1 [PT]
 
 # Rewrite for the guides
 RewriteRule ^([\d\.]+)/(guide.*) $1-index.php/$2 [QSA,L]
