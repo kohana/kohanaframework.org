@@ -18,6 +18,9 @@ RewriteRule ^(.*)$ http://kohanaframework.org/$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
+# Rewrite /guide/ to /3.0/guide/
+RewriteRule ^guide.* /3.0/guide/$1 [PT]
+
 # Rewrite for the guides
 RewriteRule ^([\d\.]+)/(guide.*) $1-index.php/$2 [QSA,L]
 
