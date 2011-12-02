@@ -10,6 +10,10 @@ RewriteBase /
 	Deny From All
 </Files>
 
+# Redirect from old domain to new
+RewriteCond %{HTTP_HOST} ^(?:www\.)?kohanaphp.com$ [NC]
+RewriteRule ^(.*)$ http://kohanaframework.org/$1 [R=301,L]
+
 # Remove www. from the URL
 RewriteCond %{HTTP_HOST} ^www.kohanaframework.org$ [NC]
 RewriteRule ^(.*)$ http://kohanaframework.org/$1 [R=301,L]
