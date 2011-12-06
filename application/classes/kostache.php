@@ -8,7 +8,6 @@ class Kostache extends Kohana_Kostache {
 	protected $_partials = array(
 		'header'   => 'partials/header',
 		'footer'   => 'partials/footer',
-		'notices'  => 'partials/notices',
 	);
 
 	/**
@@ -165,15 +164,5 @@ class Kostache extends Kohana_Kostache {
 	public function kohana_codename()
 	{
 		return Kohana::CODENAME;
-	}
-	
-	/**
-	 * Returns notices
-	 *
-	 * @return  string
-	 */
-	public function notices()
-	{
-		return Notice::as_array();
 	}
 }

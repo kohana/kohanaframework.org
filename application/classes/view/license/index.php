@@ -8,7 +8,6 @@ class View_License_Index extends Kostache_Layout {
 	protected $_partials = array(
 		'header'   => 'partials/header',
 		'footer'   => 'partials/footer',
-		'notices'  => 'partials/notices',
 	);
 
 	/**
