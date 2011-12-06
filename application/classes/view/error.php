@@ -8,7 +8,6 @@ abstract class View_Error extends Kostache_Layout {
 	protected $_partials = array(
 		'header'   => 'partials/header',
 		'footer'   => 'partials/footer',
-		'notices'  => 'partials/notices',
 		'banner'   => 'partials/error/banner',
 	);
 
