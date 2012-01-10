@@ -14,4 +14,15 @@ class View_Team_Index extends Kostache_Layout {
 	 * @var     boolean   show the banner space on template
 	 */
 	public $banner_exists = FALSE;
+
+	/**
+	 * Email link for team@kohanaframework.org
+	 *
+	 * @return  string
+	 */
+	public function team_at_kohanaframework()
+	{
+		return HTML::mailto('team@kohanaframework.org');
+	}
+
 }
