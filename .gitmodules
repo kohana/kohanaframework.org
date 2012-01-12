@@ -25,3 +25,6 @@
 [submodule "guides/3.2"]
 	path = guides/3.2
 	url = https://github.com/kohana/kohana.git
+[submodule "guides/3.3"]
+	path = guides/3.3
+	url = https://github.com/kohana/kohana.git
