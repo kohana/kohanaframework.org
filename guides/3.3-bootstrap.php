@@ -85,6 +85,13 @@ Kohana::init(array(
 ));
 
 /**
+ * Setup the cookie salt.
+ * Since this is just for the userguide and cookies are not used for anything really,
+ * Its "okay" to set this to something this crap!
+ */
+Cookie::$salt = '12345';
+
+/**
  * Attach the file write to logging. Multiple writers are supported.
  */
 Kohana::$log->attach(new Log_File(APPPATH.'logs'));
