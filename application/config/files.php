@@ -2,23 +2,23 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'       => 'v3.2.0',
-		'codename'      => 'kolibri',
+		'version'       => 'v3.2.1',
+		'codename'      => 'Milvago',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1670/kohana-3.2.0.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=50',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1703/kohana-3.2.1.zip',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=60',
 		'documentation' => 'http://kohanaframework.org/3.2/guide/',
-		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=54',
-		'support_until' => 'July, 2012'
+		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=61',
+		'support_until' => 'March, 2012'
 	),
 	'support' => array(
-		'version'       => 'v3.1.4',
+		'version'       => 'v3.1.5',
 		'codename'      => 'fasciinucha',
 		'status'        => 'stable',
 		'download'      => 'http://dev.kohanaframework.org/attachments/download/1671/kohana-3.1.4.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=45',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=53',
 		'documentation' => 'http://kohanaframework.org/3.1/guide/',
 		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=53',
-		'support_until' => 'February, 2012'
+		'support_until' => 'August, 2012'
 	),
 );
