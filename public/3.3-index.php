@@ -6,14 +6,14 @@
  *
  * @see  http://kohanaframework.org/guide/about.install#application
  */
-$application = '../guides/3.2/application';
+$application = '../guides/3.3/application';
 
 /**
  * The directory in which your modules are located.
  *
  * @see  http://kohanaframework.org/guide/about.install#modules
  */
-$modules = '../guides/3.2/modules';
+$modules = '../guides/3.3/modules';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -21,7 +21,7 @@ $modules = '../guides/3.2/modules';
  *
  * @see  http://kohanaframework.org/guide/about.install#system
  */
-$system = '../guides/3.2/system';
+$system = '../guides/3.3/system';
 
 /**
  * The default extension of resource files. If you change this, all resources
@@ -76,12 +76,6 @@ define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
 // Clean up the configuration vars
 unset($application, $modules, $system);
 
-if (file_exists('install'.EXT))
-{
-	// Load the installation check
-	return include 'install'.EXT;
-}
-
 /**
  * Define the start time of the application, used for profiling.
  */
@@ -99,13 +93,13 @@ if ( ! defined('KOHANA_START_MEMORY'))
 }
 
 // Bootstrap the application
-require '../guides/3.2-bootstrap'.EXT;
+require '../guides/3.3-bootstrap'.EXT;
 
 /**
  * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
  * If no source is specified, the URI will be automatically detected.
  */
-echo Request::factory()
+echo Request::factory(TRUE, array(), FALSE)
 	->execute()
-	->send_headers()
+	->send_headers(TRUE)
 	->body();
