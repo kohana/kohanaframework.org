@@ -2,13 +2,13 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'       => 'v3.3.0',
-		'codename'      => 'badius',
+		'version'       => 'v3.3.1',
+		'codename'      => 'peregrinus',
 		'status'        => 'stable',
-		'download'      => 'https://github.com/downloads/kohana/kohana/kohana-3.3.0.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=55',
+		'download'      => 'https://github.com/kohana/kohana/archive/v3.3.1.zip',
+		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=65',
 		'documentation' => 'http://kohanaframework.org/3.3/guide/',
-		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=63',
+		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=66',
 		'support_until' => 'November, 2013'
 	),
 	'support' => array(
