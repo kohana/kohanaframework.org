@@ -10,9 +10,6 @@
 [submodule "modules/oauth"]
 	path = modules/oauth
 	url = git://github.com/kohana/oauth.git
-[submodule "modules/kostache"]
-	path = modules/kostache
-	url = https://github.com/zombor/KOstache.git
 [submodule "modules/gallery/vendor/slides"]
 	path = modules/gallery/vendor/slides
 	url = git://github.com/nathansearles/Slides.git
