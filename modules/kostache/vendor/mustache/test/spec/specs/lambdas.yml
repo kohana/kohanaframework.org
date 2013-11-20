@@ -1,0 +1,67 @@
+tests:
+  - name: Interpolation
+    desc: A lambda's return value should be interpolated.
+    data:
+      lambda: !code
+        ruby: 'proc { "world" }'
+        perl: 'sub { "world" }'
+    template: "Hello, {{lambda}}!"
+    expected: "Hello, world!"
+
+  - name: Interpolation - Expansion
+    desc: A lambda's return value should be parsed.
+    data:
+      planet: "world"
+      lambda: !code
+        ruby: 'proc { "{{planet}}" }'
+        perl: 'sub { "{{planet}}" }'
+    template: "Hello, {{lambda}}!"
+    expected: "Hello, world!"
+
+  - name: Interpolation - Multiple Calls
+    desc: Interpolated lambdas should only be called once.
+    data:
+      lambda: !code
+        ruby: 'proc { $calls ||= 0; $calls += 1 }'
+        perl: 'sub { no strict; $calls += 1 }'
+    template: '{{lambda}} == {{{lambda}}} == {{lambda}}'
+    expected: '1 == 1 == 1'
+
+  - name: Escaping
+    desc: Lambda results should be appropriately escaped.
+    data:
+      lambda: !code
+        ruby: 'proc { ">" }'
+        perl: 'sub { ">" }'
+    template: "<{{lambda}}{{{lambda}}}"
+    expected: "<&gt;>"
+
+  - name: Section
+    desc: Lambdas used for sections should receive the raw section string.
+    data:
+      x: 'Error!'
+      lambda: !code
+        ruby: 'proc { |text| text == "{{x}}" ? "yes" : "no" }'
+        perl: 'sub { $_[0] eq "{{x}}" ? "yes" : "no" }'
+    template: "<{{#lambda}}{{x}}{{/lambda}}>"
+    expected: "<yes>"
+
+  - name: Section - Expansion
+    desc: Lambdas used for sections should have their results parsed.
+    data:
+      planet: "Earth"
+      lambda: !code
+        ruby: 'proc { |text| "#{text}{{planet}}#{text}" }'
+        perl: 'sub { $_[0] . "{{planet}}" . $_[0] }'
+    template: "<{{#lambda}}-{{/lambda}}>"
+    expected: "<-Earth->"
+
+  - name: Inverted Section
+    desc: Lambdas used for inverted sections should be considered truthy.
+    data:
+      static: 'static'
+      lambda: !code
+        ruby: 'proc { |text| text }'
+        perl: 'sub { shift }'
+    template: "<{{^lambda}}{{static}}{{/lambda}}>"
+    expected: "<>"
