@@ -27,4 +27,4 @@
 	url = https://github.com/kohana/kohana.git
 [submodule "guides/3.3"]
 	path = guides/3.3
-	url = git@github.com:kohana/kohana.git
+	url = https://github.com/kohana/kohana.git
