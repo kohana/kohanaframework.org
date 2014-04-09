@@ -2,23 +2,23 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'       => 'v3.3.1',
-		'codename'      => 'peregrinus',
+		'version'       => 'v3.3.2',
+		'codename'      => 'dryocopus',
 		'status'        => 'stable',
 		'download'      => 'https://github.com/kohana/kohana/releases/download/v3.3.1/kohana-v3.3.1.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=65',
+		'changelog'     => 'http://dev.kohanaframework.org/versions/212',
 		'documentation' => 'http://kohanaframework.org/3.3/guide/',
 		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=66',
-		'support_until' => 'November, 2013'
+		'support_until' => 'Final'
 	),
 	'support' => array(
-		'version'       => 'v3.2.2',
-		'codename'      => 'hypoleucos',
+		'version'       => 'v3.2.3',
+		'codename'      => 'turdus',
 		'status'        => 'stable',
-		'download'      => 'https://github.com/downloads/kohana/kohana/kohana-3.2.2.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=61',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1714/kohana-3.2.3.zip',
+		'changelog'     => 'http://dev.kohanaframework.org/versions/210',
 		'documentation' => 'http://kohanaframework.org/3.2/guide/',
 		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=62',
-		'support_until' => 'May, 2013'
+		'support_until' => 'Final'
 	),
 );
