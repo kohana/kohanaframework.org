@@ -5,7 +5,7 @@ return array(
 		'version'       => 'v3.3.2',
 		'codename'      => 'dryocopus',
 		'status'        => 'stable',
-		'download'      => 'https://github.com/kohana/kohana/releases/download/v3.3.1/kohana-v3.3.1.zip',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1715/kohana-3.3.2.zip',
 		'changelog'     => 'http://dev.kohanaframework.org/versions/212',
 		'documentation' => 'http://kohanaframework.org/3.3/guide/',
 		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=66',
