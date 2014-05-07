@@ -12,10 +12,10 @@ return array(
 		'support_until' => 'Final'
 	),
 	'support' => array(
-		'version'       => 'v3.2.3',
+		'version'       => 'v3.2.3.1',
 		'codename'      => 'turdus',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1714/kohana-3.2.3.zip',
+		'download'      => 'http://dev.kohanaframework.org/attachments/download/1716/kohana-3.2.3.1.zip',
 		'changelog'     => 'http://dev.kohanaframework.org/versions/210',
 		'documentation' => 'http://kohanaframework.org/3.2/guide/',
 		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=62',
