@@ -1,0 +1,61 @@
+/**
+* @author Kohana Team
+* @copyright (c) 2008-2012 Kohana Team
+* @license http://kohanaframework.org/license
+*/
+
+@media screen and (max-width: 930px) {
+
+/* home */
+body { padding:0 10px 10px 10px; }
+.wrapper { width: 100%; margin:auto; }
+#banner h2 { font-size: 20px; width: 55%; }
+#features li { width: 38%; min-height: 80px; }
+#features li:nth-child(3n+1) { clear: none; }
+#features li:nth-last-child(-n+3) { margin: 0px 20px 38px 0px; }
+#community { width: 470px; }
+#community li { border-width: 0; }
+#community li:nth-child(3n+1) { padding: 8px; }
+#community li:nth-child(-n+3) { padding: 8px; }
+#community li:nth-child(3n+2) { width: 212px; }
+
+#who { display: none; }
+#gallery { margin: 0 auto; float: none; }
+
+/* downloads */
+.container .textHeavy { padding-right: 5px; }
+
+}
+
+@media screen and (max-width: 680px) {
+	nav { float: none; width: 95%; }
+	#features li { width: 35%; min-height: 115px; }
+	#community { width: 55%; }
+	#community li { width: 100%; }
+	#community li:nth-child(3n+1) { padding: 0; }
+	#community li:nth-child(-n+3) { padding: 0; }
+	#community li:nth-child(3n+2) { width: 100%; }
+	
+	#gallery { width: 100%; }
+	#gallery img { width: 100%; }
+}
+
+@media screen and (max-width: 610px) {
+	#banner h2 { width: 100%; font-size: 18px; }
+	.download { width: 240px; float: none; margin: 0 auto; }
+	#features li { width: 95%; min-height: 60px; }
+	#community { width: 100%; }
+	#giving { width: 95%; }
+	
+	#stable .download { margin-left: auto; }
+	#stable h3 { text-align: center; }
+}
+
+@media screen and (max-width: 530px) {
+	#features li { width: 85%; }
+}
+
+@media screen and (max-width: 500px) {
+	nav { font-size: 80%; }
+	nav a:link, nav a:visited { padding: 8px; }
+}
