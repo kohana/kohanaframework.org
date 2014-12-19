@@ -21,6 +21,9 @@ body { padding:0 10px 10px 10px; }
 #community li:nth-child(-n+3) { padding: 8px; }
 #community li:nth-child(3n+2) { width: 212px; }
 
+#who { display: none; }
+#gallery { margin: 0 auto; float: none; }
+
 /* downloads */
 .container .textHeavy { padding-right: 5px; }
 
@@ -34,6 +37,9 @@ body { padding:0 10px 10px 10px; }
 	#community li:nth-child(3n+1) { padding: 0; }
 	#community li:nth-child(-n+3) { padding: 0; }
 	#community li:nth-child(3n+2) { width: 100%; }
+	
+	#gallery { width: 100%; }
+	#gallery img { width: 100%; }
 }
 
 @media screen and (max-width: 610px) {
