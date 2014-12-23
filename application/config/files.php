@@ -2,13 +2,13 @@
 
 return array(
 	'kohana-latest' => array(
-		'version'       => 'v3.3.2',
-		'codename'      => 'dryocopus',
+		'version'       => 'v3.3.3.1',
+		'codename'      => 'uluru',
 		'status'        => 'stable',
-		'download'      => 'http://dev.kohanaframework.org/attachments/download/1715/kohana-3.3.2.zip',
-		'changelog'     => 'http://dev.kohanaframework.org/versions/212',
+		'download'      => 'https://github.com/kohana/kohana/releases/download/v3.3.3.1/kohana-3.3.3.1.zip',
+		'changelog'     => 'https://github.com/kohana/core/compare/v3.3.2...v3.3.3',
 		'documentation' => 'http://kohanaframework.org/3.3/guide/',
-		'issues'        => 'http://dev.kohanaframework.org/projects/kohana3/issues?query_id=66',
+		'issues'        => 'https://github.com/kohana/core/issues?q=milestone%3A3.3.3',
 		'support_until' => 'Final'
 	),
 	'support' => array(
