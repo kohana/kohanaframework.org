@@ -150,7 +150,7 @@ Header and navigation
 header { overflow:hidden; }
 
 header h1 { margin-top:23px; float:left; }
-header h1 a { background:url(../img/logo-new.png) no-repeat; display:block; width:200px; padding-top:70px; margin-top: -15px; height:0px; overflow:hidden; }
+header h1 a { background:url(../img/kohana-logo.png) no-repeat; display:block; width:200px; padding-top:70px; margin-top: -15px; height:0px; overflow:hidden; }
 
 nav { text-transform:uppercase; letter-spacing:1px; font-size:93%; float:right; overflow:hidden; margin-top:24px; position:relative; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:rgba(255,255,255,.2); padding:0 12px; }
 nav li { float:left; }
