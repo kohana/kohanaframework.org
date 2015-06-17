@@ -15,7 +15,6 @@ web1:
     - guides/3.3/application/logs
   php_extensions:
       - curl
-      - http
       - iconv
       - mbstring
       - mcrypt
