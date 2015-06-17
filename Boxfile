@@ -1,20 +1,23 @@
---- 
-web1: 
-  document_root: /public/
-  name: www-kohanaframework
-  shared_writable_dirs: 
-    - application/cache
-    - application/logs
-    - guides/3.0/application/cache
-    - guides/3.0/application/logs
-    - guides/3.1/application/cache
-    - guides/3.1/application/logs
-    - guides/3.2/application/cache
-    - guides/3.2/application/logs
-    - guides/3.3/application/cache
-    - guides/3.3/application/logs
+web1:
+  name: www-kohanaframework-v2
+  type: php
+  version: 5.4
+  stability: production
+  httpd_document_root: public
+  network_dirs:
+    storage1:
+      - application/cache
+      - application/logs
+      - guides/3.0/application/cache
+      - guides/3.0/application/logs
+      - guides/3.1/application/cache
+      - guides/3.1/application/logs
+      - guides/3.2/application/cache
+      - guides/3.2/application/logs
+      - guides/3.3/application/cache
+      - guides/3.3/application/logs
   php_extensions:
-      - curl
-      - iconv
-      - mbstring
-      - mcrypt
+    - curl
+    - iconv
+    - mbstring
+    - mcrypt
