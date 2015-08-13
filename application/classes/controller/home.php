@@ -5,7 +5,6 @@ class Controller_Home extends Controller {
 	public function action_index()
 	{
 		$view = new View_Home_Index;
-		$view->set('download', Kohana::$config->load('files')->{'kohana-latest'});
 		$this->response->body($view);
 	}
 

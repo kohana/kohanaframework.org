@@ -145,6 +145,12 @@ class Kostache extends Kohana_Kostache {
 	{
 		return Route::url('license');
 	}
+
+	public function github_releases_url()
+	{
+		return 'https://github.com/kohana/kohana/releases';
+	}
+
 	
 	/**
 	 * Returns current kohana version

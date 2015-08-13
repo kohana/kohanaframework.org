@@ -25,13 +25,4 @@ class View_Home_Index extends Kostache_Layout
 	 */
 	public $menu_home = TRUE;
 
-	public function download_version()
-	{
-		return $this->download['version'].' ('.$this->download['status'].')';
-	}
-
-	public function download_link()
-	{
-		return $this->download['download'];
-	}
 }
