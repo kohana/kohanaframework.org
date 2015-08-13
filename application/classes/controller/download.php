@@ -4,11 +4,8 @@ class Controller_Download extends Controller {
 
 	public function action_index()
 	{
-		$download = Kohana::$config->load('files');
-
 		$view = new View_Download_Index;
-		$view->set('download', $download)
-			->set('title', 'Download Kohana');
+		$view->set('title', 'Download Kohana');
 
 		$this->response->body($view);
 	}
